@@ -16,13 +16,16 @@
                     <div class="h-[30px] flex -mx-[15px]">
                         <div class="flex-1"></div>
                         <div class="flex-1 flex justify-end">
-                            <div class=" bg-white-10 shadow-none border-0 rounded-[5px] mr-[42px] h-[35px] relative">
+                            <div class="bg-white-10 shadow-none border-0 rounded-[5px] mr-[42px] h-[35px] relative">
                                 <a href="#"
-                                    class="text-white  flex mb-0 font-normal text-center align-middle cursor-pointer py-[6px] px-3 text-sm leading-[1.42] rounded-[4px]">
-                                    <div class="mr-2"><img src="img/log-in.svg"></div>
+                                    class="text-white flex mb-0 font-normal text-center align-middle cursor-pointer py-[6px] px-3 text-sm leading-[1.42] rounded-[4px] hover:text-white hover:border hover:border-white hover:bg-white hover:bg-opacity-30">
+                                    <div class="mr-2">
+                                        <img src="img/log-in.svg" alt="Login Icon">
+                                    </div>
                                     BAYİ GİRİŞİ
                                 </a>
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -50,12 +53,12 @@
                                     </div>
                                 </div>
                                 <div class="mt-[2px] inline-block float-left ml-[45px] box-border items-center">
-                                    <form action="" class="relative ">
-                                        <input type="text"
-                                            class="bg-white-10 shadow-none border-0 rounded-[50px]  text-sm h-[45px] py-0 pr-[18px] pl-[50px] w-[330px]">
+                                    <form action="" class="relative">
+                                        <input type="text" placeholder="Ne aramıştınız?..."
+                                            class="bg-white-10 shadow-none border-0 rounded-[50px] text-sm h-[45px] py-0 pr-[18px] pl-[50px] w-[330px]">
                                         <button
-                                            class="absolute bg-transparent border-0 cursor-pointer  py-auto px-5  right-0   transform translate-y--1/2 transition-all duration-300 ease delay-0 ">
-                                            <img src="img/search.svg" class="">
+                                            class="absolute bg-transparent border-0 cursor-pointer py-auto px-5 right-0 top-1/2 transform -translate-y-1/2 transition-all duration-300 ease delay-0">
+                                            <img src="img/search.svg" alt="search">
                                         </button>
                                     </form>
                                 </div>
@@ -87,14 +90,13 @@
                         <nav class="inline-block">
                             <ul class="text-left flex justify-between space-x-[49px]">
                                 <li class="inline-block relative whitespace-nowrap text-white group">
-                                    <a href="{{ url('/welcome') }}"
+                                    <a href="{{ url('/') }}"
                                         class="text-white inline-block font-normal leading-[55px] uppercase transition-all duration-500 ease-in-out transform group-hover:translate-y-[55px] group-hover:opacity-0">
                                         ANA SAYFA
                                     </a>
                                     <span
                                         class="absolute top-0 left-0 w-full h-full flex items-center justify-center opacity-0 transition-opacity duration-500 ease-in-out transform -translate-y-[55px] group-hover:translate-y-0 group-hover:opacity-100">
-                                        <a href="{{ url('/welcome') }}"
-                                            class="relative text-white border-b-2 border-red-500">
+                                        <a href="{{ url('/')  }}" class="relative text-white border-b-2 border-red-500">
 
                                             ANA SAYFA
                                         </a>
@@ -183,19 +185,20 @@
             <div class="border-none border-medium p-custom bg-white">
                 <div class="flex flex-wrap mx-[-5px]">
                     <div class="px-[5px] flex-0-0-100 max-w-full">
-                        <div class="relative text-center">
+                        <div class="mt-[10px] relative text-center">
                             <h4 class="text-[#a80e10] font-semibold text-sm">KURUMSAL EKİP PROFESYONEL ÇÖZÜM</h4>
-                            <p class="text-[#333] m-o text-[13px] leading-[18px]">Geniş Ürün Yelpazesi, Güçlü Pazarlama
+                            <p class="text-[#333] m-o0 text-[13px] leading-[18px]">Geniş Ürün Yelpazesi, Güçlü Pazarlama
                                 ve Dağıtım Ağı İle Türkiye Çapında Güvenilir Yapı Malzemeleri Tedariğinde Lider</p>
-                            <div
-                                class="absolute left-1/2 transform -translate-x-1/2 z-[99] border-t-[70px] border-l-[120px] border-r-[120px] border-l-transparent border-r-transparent border-t-[#fff] border-solid">
+                            <div class="relative z-[99]">
+                                <div
+                                    class="absolute left-1/2 transform -translate-x-1/2 border-t-[70px] border-l-[120px] border-r-[120px] border-l-transparent border-r-transparent border-t-[#fff] border-solid">
+                                </div>
                                 <img src="img/logo3.png" alt=""
-                                    class="absolute top-[-50px] left-1/2 transform -translate-x-1/2">
+                                    class="absolute left-1/2 mt-5 transform -translate-x-1/2 top-[75%]">
                             </div>
-
-
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -334,7 +337,7 @@
                             <div class="bg-white text-center my-[-5px] mx-[10px] border-2 shadow-md rounded-lg ">
                                 <div class="relative">
                                     <div class="box-border min-h-[245px]">
-                                        <a href="#">
+                                        <a href="{{ url('/detay')  }}">
                                             <img src="img/ürün.jpg" alt="" class="w-full h-full object-cover">
                                         </a>
                                     </div>
@@ -1505,251 +1508,269 @@
                     </div>
                 </div>
 
-                <div class="flex justify-between pt-[15px] pl-6 pb-[13px] box-border">
+                <div class="flex-col justify-between pt-[15px] pl-6 pb-[13px] box-border">
                     <div class="flex justify-between w-full">
-                        <ul class="m-0 p-0 flex-1 ">
-                            <li class="inline-block  mt-2 mx-px mb-0">
-                                <a href="#"
-                                    class="text-[#454545] bg-[#f1f1f1] rounded-[3px] block text-center w-8 h-8  items-center justify-center border-none border-[#d4d4d4] hover:bg-[#44526c] hover:text-white">1</a>
-                            </li>
-                        
+                        <ul class="m-0 p-0 flex-1">
                             <li class="inline-block mt-2 mx-px mb-0">
                                 <a href="#"
-                                    class="text-[#454545] bg-[#f1f1f1] rounded-[3px] block text-center  w-8 h-8  items-center justify-center  border-none border-[#d4d4d4] hover:bg-[#44526c] hover:text-white">2</a>
+                                    class="text-[#454545] bg-[#f1f1f1] rounded-[3px] block text-center w-8 h-8 items-center justify-center border-none border-[#d4d4d4] hover:bg-[#44526c] hover:text-white">1</a>
                             </li>
-                        
+
                             <li class="inline-block mt-2 mx-px mb-0">
                                 <a href="#"
-                                    class="text-[#454545] bg-[#f1f1f1] rounded-[3px] block text-center  w-8 h-8  items-center justify-center  border-none border-[#d4d4d4] hover:bg-[#44526c] hover:text-white">3</a>
+                                    class="text-[#454545] bg-[#f1f1f1] rounded-[3px] block text-center w-8 h-8 items-center justify-center border-none border-[#d4d4d4] hover:bg-[#44526c] hover:text-white">2</a>
                             </li>
-                       
-                            <li class="inline-block mt-2  mx-px  mb-0">
+
+                            <li class="inline-block mt-2 mx-px mb-0">
                                 <a href="#"
-                                    class="text-[#454545] bg-[#f1f1f1] rounded-[3px] block text-center  w-8 h-8  items-center justify-center border-none border-[#d4d4d4] hover:bg-[#44526c] hover:text-white">4</a>
+                                    class="text-[#454545] bg-[#f1f1f1] rounded-[3px] block text-center w-8 h-8 items-center justify-center border-none border-[#d4d4d4] hover:bg-[#44526c] hover:text-white">3</a>
                             </li>
-                       
-                            <li class="inline-block mt-2  mx-px mb-0">
+
+                            <li class="inline-block mt-2 mx-px mb-0">
                                 <a href="#"
-                                    class="text-[#454545] bg-[#f1f1f1] rounded-[3px] block text-center  w-8 h-8  items-center justify-center border-none border-[#d4d4d4] hover:bg-[#44526c] hover:text-white">5</a>
+                                    class="text-[#454545] bg-[#f1f1f1] rounded-[3px] block text-center w-8 h-8 items-center justify-center border-none border-[#d4d4d4] hover:bg-[#44526c] hover:text-white">4</a>
                             </li>
-                       
-                            <li class="inline-block mt-2  mx-px mb-0">
+                            <li class="inline-block mt-2 mx-px mb-0">
                                 <a href="#"
-                                    class="text-[#454545] bg-[#f1f1f1] rounded-[3px] block text-center  w-8 h-8  items-center justify-center border-none border-[#d4d4d4] hover:bg-[#44526c] hover:text-white">6</a>
+                                    class="text-[#454545] bg-[#f1f1f1] rounded-[3px] block text-center w-8 h-8 items-center justify-center border-none border-[#d4d4d4] hover:bg-[#44526c] hover:text-white">5</a>
                             </li>
-                        
-                            <li class="inline-block mt-2  mx-px mb-0">
+
+                            <li class="inline-block mt-2 mx-px mb-0">
                                 <a href="#"
-                                    class="text-[#454545] bg-[#f1f1f1] rounded-[3px] block text-center  w-8 h-8  items-center justify-center border-none border-[#d4d4d4] hover:bg-[#44526c] hover:text-white">7</a>
+                                    class="text-[#454545] bg-[#f1f1f1] rounded-[3px] block text-center w-8 h-8 items-center justify-center border-none border-[#d4d4d4] hover:bg-[#44526c] hover:text-white">6</a>
                             </li>
-                       
-                            <li class="inline-block mt-2  mx-px mb-0">
+
+                            <li class="inline-block mt-2 mx-px mb-0">
                                 <a href="#"
-                                    class="text-[#454545] bg-[#f1f1f1] rounded-[3px] block text-center  w-8 h-8  items-center justify-center border-none border-[#d4d4d4] hover:bg-[#44526c] hover:text-white">8</a>
+                                    class="text-[#454545] bg-[#f1f1f1] rounded-[3px] block text-center w-8 h-8 items-center justify-center border-none border-[#d4d4d4] hover:bg-[#44526c] hover:text-white">7</a>
                             </li>
-                        
-                            <li class="inline-block mt-2  mx-px mb-0">
+
+                            <li class="inline-block mt-2 mx-px mb-0">
                                 <a href="#"
-                                    class="text-[#454545] bg-[#f1f1f1] rounded-[3px] block text-center  w-8 h-8  items-center justify-center border-none border-[#d4d4d4] hover:bg-[#44526c] hover:text-white">9</a>
+                                    class="text-[#454545] bg-[#f1f1f1] rounded-[3px] block text-center w-8 h-8 items-center justify-center border-none border-[#d4d4d4] hover:bg-[#44526c] hover:text-white">8</a>
                             </li>
-                        
-                            <li class="inline-block mt-2  mx-px mb-0">
+                            <li class="inline-block mt-2 mx-px mb-0">
                                 <a href="#"
-                                    class="text-[#454545] bg-[#f1f1f1] rounded-[3px] block text-center  w-8 h-8  items-center justify-center border-none border-[#d4d4d4] hover:bg-[#44526c] hover:text-white">10</a>
+                                    class="text-[#454545] bg-[#f1f1f1] rounded-[3px] block text-center w-8 h-8 items-center justify-center border-none border-[#d4d4d4] hover:bg-[#44526c] hover:text-white">9</a>
                             </li>
-                        
-                            <li class="inline-block mt-2  mx-px mb-0">
+
+                            <li class="inline-block mt-2 mx-px mb-0">
                                 <a href="#"
-                                    class="text-[#454545] bg-[#f1f1f1] rounded-[3px] flex  text-center  w-12 h-8  items-center justify-center border-none border-[#d4d4d4] hover:bg-[#44526c] hover:text-white">İleri
-                                <img src="img/chevron-right.svg"  class=""></a>
+                                    class="text-[#454545] bg-[#f1f1f1] rounded-[3px] block text-center w-8 h-8 items-center justify-center border-none border-[#d4d4d4] hover:bg-[#44526c] hover:text-white">10</a>
                             </li>
-                            <li class="inline-block mt-2  mx-px mb-0">
+                            <li class="inline-block mt-2 mx-px mb-0">
                                 <a href="#"
-                                    class="text-[#454545] bg-[#f1f1f1] rounded-[3px] flex  text-center  w-12 h-8  items-center justify-center border-none border-[#d4d4d4] hover:bg-[#44526c] hover:text-white">Son
-                                    <img src="img/chevron-right.svg"  class=""></a>
+                                    class="text-[#454545] bg-[#f1f1f1] rounded-[3px] block text-center w-8 h-8 items-center justify-center border-none border-[#d4d4d4] hover:bg-[#44526c] hover:text-white">1</a>
+                            </li>
+
+                            <li class="inline-block mt-2 mx-px mb-0">
+                                <a href="#"
+                                    class="text-[#454545] bg-[#f1f1f1] rounded-[3px] flex text-center w-12 h-8 items-center justify-center border-none border-[#d4d4d4] hover:bg-[#44526c] hover:text-white">İleri
+                                    <img src="img/chevron-right.svg" class=""></a>
+                            </li>
+                            <li class="inline-block mt-2 mx-px mb-0">
+                                <a href="#"
+                                    class="text-[#454545] bg-[#f1f1f1] rounded-[3px] flex text-center w-12 h-8 items-center justify-center border-none border-[#d4d4d4] hover:bg-[#44526c] hover:text-white">Son
+                                    <img src="img/chevron-right.svg" class=""></a>
                             </li>
                         </ul>
                     </div>
+                    <span class="mt-2 mx-px mb-0">Toplam 160 Sayfa</span>
                 </div>
 
             </div>
+
+
 
             <div class="flex-0-0-25 max-w-[25%]">
                 <div class="border border-custom-border bg-custom-gradient w-[280px]">
                     <div class="box-border p-2">
                         <h4 class="text-[#4766a8] m-0 mb-2 font-medium text-[18px]">Ürün Kategorisi</h4>
                         <div class="box-border ">
-                            <div class="text-left mt-5 box-border ">
-                                <a href="#"
-                                    class="link w-full text-[#242424] inline-block text-sm font-medium py-[7px] pr-[10px] mt-[5px] pl-0 mb-[3px] border-b border-gray-300 hover:text-white hover:bg-[#44526c]">
-                                    <i class="flex font-normal not-italic text-sm">
-                                        <img src="img/chevron-right.svg" alt="chevron-right">
-                                        Hazır Standlar
-                                    </i>
-                                </a>
-
-                                <a href="#"
-                                    class="link w-full text-[#242424] inline-block text-sm font-medium py-[7px] pr-[10px] mt-[5px] pl-0 mb-[3px] border-b border-gray-300  hover:text-white hover:bg-[#44526c] ">
-                                    <i class="flex  font-normal not-italic text-sm "><img src="img/chevron-right.svg">
-                                        Bahçe Ürünü</i>
-                                </a>
-                                <a href="#"
-                                    class="link w-full text-[#242424] inline-block text-sm font-medium py-[7px] pr-[10px] mt-[5px] pl-0 mb-[3px] border-b border-gray-300  hover:text-white hover:bg-[#44526c] ">
-                                    <i class="flex  font-normal not-italic text-sm "><img src="img/chevron-right.svg">
-                                        İnşaat</i>
-                                </a>
-                                <a href="#"
-                                    class="link w-full text-[#242424] inline-block text-sm font-medium py-[7px] pr-[10px] mt-[5px] pl-0 mb-[3px] border-b border-gray-300  hover:text-white hover:bg-[#44526c]">
-                                    <i class="flex  font-normal not-italic text-sm "><img src="img/chevron-right.svg">
-                                        Yapı Kimyasalları</i>
-                                </a>
-                                <a href="#"
-                                    class="link w-full text-[#242424] inline-block text-sm font-medium py-[7px] pr-[10px] mt-[5px] pl-0 mb-[3px] border-b border-gray-300  hover:text-white hover:bg-[#44526c]">
-                                    <i class="flex  font-normal not-italic text-sm "><img src="img/chevron-right.svg">
-                                        Hırdavat Nalburiye</i>
-                                </a>
-                                <a href="#"
-                                    class="link w-full text-[#242424] inline-block text-sm font-medium py-[7px] pr-[10px] mt-[5px] pl-0 mb-[3px] border-b border-gray-300  hover:text-white hover:bg-[#44526c]">
-                                    <i class="flex  font-normal not-italic text-sm "><img src="img/chevron-right.svg">
-                                        El Aletleri Grubu</i>
-                                </a>
-                                <a href="#"
-                                    class="link w-full text-[#242424] inline-block text-sm font-medium py-[7px] pr-[10px] mt-[5px] pl-0 mb-[3px] border-b border-gray-300  hover:text-white hover:bg-[#44526c]">
-                                    <i class="flex  font-normal not-italic text-sm "><img src="img/chevron-right.svg">
-                                        Boya ve Dekorasyon Grubu</i>
-                                </a>
-                                <a href="#"
-                                    class="link w-full text-[#242424] inline-block text-sm font-medium py-[7px] pr-[10px] mt-[5px] pl-0 mb-[3px] border-b border-gray-300  hover:text-white hover:bg-[#44526c]">
-                                    <i class="flex  font-normal not-italic text-sm "><img src="img/chevron-right.svg">
-                                        Mobilya ve Kilit Grubu</i>
-                                </a>
-                                <a href="#"
-                                    class="link w-full text-[#242424] inline-block text-sm font-medium py-[7px] pr-[10px] mt-[5px] pl-0 mb-[3px] border-b border-gray-300  hover:text-white hover:bg-[#44526c]">
-                                    <i class="flex  font-normal not-italic text-sm "><img src="img/chevron-right.svg">
-                                        Bant Grubu</i>
-                                </a>
-                                <a href="#"
-                                    class="link w-full text-[#242424] inline-block text-sm font-medium py-[7px] pr-[10px] mt-[5px] pl-0 mb-[3px] border-b border-gray-300  hover:text-white hover:bg-[#44526c]">
-                                    <i class="flex  font-normal not-italic text-sm "><img src="img/chevron-right.svg">
-                                        Bahçe Grubu</i>
-                                </a>
-                                <a href="#"
-                                    class="link w-full text-[#242424] inline-block text-sm font-medium py-[7px] pr-[10px] mt-[5px] pl-0 mb-[3px] border-b border-gray-300  hover:text-white hover:bg-[#44526c]">
-                                    <i class="flex  font-normal not-italic text-sm "><img src="img/chevron-right.svg">
-                                        Kesici Delici Aşındırıclar</i>
-                                </a>
-                                <a href="#"
-                                    class="link w-full text-[#242424] inline-block text-sm font-medium py-[7px] pr-[10px] mt-[5px] pl-0 mb-[3px] border-b border-gray-300  hover:text-white hover:bg-[#44526c]">
-                                    <i class="flex  font-normal not-italic text-sm "><img src="img/chevron-right.svg">
-                                        Elektrik Malzemeleri Grubu</i>
-                                </a>
-                                <a href="#"
-                                    class="link w-full text-[#242424] inline-block text-sm font-medium py-[7px] pr-[10px] mt-[5px] pl-0 mb-[3px] border-b border-gray-300  hover:text-white hover:bg-[#44526c] ">
-                                    <i class="flex  font-normal not-italic text-sm "><img src="img/chevron-right.svg">
-                                        Tesisat Malzemeleri</i>
-                                </a>
-                                <a href="#"
-                                    class="link w-full text-[#242424] inline-block text-sm font-medium py-[7px] pr-[10px] mt-[5px] pl-0 mb-[3px] border-b border-gray-300  hover:text-white hover:bg-[#44526c]">
-                                    <i class="flex  font-normal not-italic text-sm "><img src="img/chevron-right.svg">
-                                        Zımpara Çeşitleri</i>
-                                </a>
-                                <a href="#"
-                                    class="link w-full text-[#242424] inline-block text-sm font-medium py-[7px] pr-[10px] mt-[5px] pl-0 mb-[3px] border-b border-gray-300  hover:text-white hover:bg-[#44526c]">
-                                    <i class="flex  font-normal not-italic text-sm "><img src="img/chevron-right.svg">
-                                        Kamp Ürünleri</i>
-                                </a>
-                                <a href="#"
-                                    class="link w-full text-[#242424] inline-block text-sm font-medium py-[7px] pr-[10px] mt-[5px] pl-0 mb-[3px] border-b border-gray-300  hover:text-white hover:bg-[#44526c]">
-                                    <i class="flex  font-normal not-italic text-sm "><img src="img/chevron-right.svg">
-                                        Stand Çeşitleri</i>
-                                </a>
-                                <a href="#"
-                                    class="link w-full text-[#242424] inline-block text-sm font-medium py-[7px] pr-[10px] mt-[5px] pl-0 mb-[3px] border-b border-gray-300  hover:text-white hover:bg-[#44526c] ">
-                                    <i class="flex  font-normal not-italic text-sm "><img src="img/chevron-right.svg">
-                                        Elektrik Malzemeleri</i>
-                                </a>
-                                <a href="#"
-                                    class="link w-full text-[#242424] inline-block text-sm font-medium py-[7px] pr-[10px] mt-[5px] pl-0 mb-[3px] border-b border-gray-300  hover:text-white hover:bg-[#44526c]">
-                                    <i class="flex  font-normal not-italic text-sm "><img src="img/chevron-right.svg">
-                                        Yapıştırıcı ve İzolasyon</i>
-                                </a>
-                                <a href="#"
-                                    class="link w-full text-[#242424] inline-block text-sm font-medium py-[7px] pr-[10px] mt-[5px] pl-0 mb-[3px] border-b border-gray-300  hover:text-white hover:bg-[#44526c]">
-                                    <i class="flex  font-normal not-italic text-sm "><img src="img/chevron-right.svg">
-                                        Boya ve Dekorasyon</i>
-                                </a>
-                                <a href="#"
-                                    class="link w-full text-[#242424] inline-block text-sm font-medium py-[7px] pr-[10px] mt-[5px] pl-0 mb-[3px] border-b border-gray-300  hover:text-white hover:bg-[#44526c]">
-                                    <i class="flex  font-normal not-italic text-sm "><img src="img/chevron-right.svg">
-                                        İnşaat Malzemeleri</i>
-                                </a>
-                                <a href="#"
-                                    class="link w-full text-[#242424] inline-block text-sm font-medium py-[7px] pr-[10px] mt-[5px] pl-0 mb-[3px] border-b border-gray-300  hover:text-white hover:bg-[#44526c]">
-                                    <i class="flex  font-normal not-italic text-sm "><img src="img/chevron-right.svg">
-                                        Hırdavat ve Nalburiye</i>
-                                </a>
-                                <a href="#"
-                                    class="link w-full text-[#242424] inline-block text-sm font-medium py-[7px] pr-[10px] mt-[5px] pl-0 mb-[3px] border-b border-gray-300  hover:text-white hover:bg-[#44526c]">
-                                    <i class="flex  font-normal not-italic text-sm "><img src="img/chevron-right.svg">
-                                        El Aletleri</i>
-                                </a>
-                                <a href="#"
-                                    class="link w-full text-[#242424] inline-block text-sm font-medium py-[7px] pr-[10px] mt-[5px] pl-0 mb-[3px] border-b border-gray-300  hover:text-white hover:bg-[#44526c]">
-                                    <i class="flex  font-normal not-italic text-sm "><img src="img/chevron-right.svg">
-                                        Elektrikli El Aletleri</i>
-                                </a>
-                                <a href="#"
-                                    class="link w-full text-[#242424] inline-block text-sm font-medium py-[7px] pr-[10px] mt-[5px] pl-0 mb-[3px] border-b border-gray-300  hover:text-white hover:bg-[#44526c]">
-                                    <i class="flex  font-normal not-italic text-sm "><img src="img/chevron-right.svg">
-                                        Elektrik ve Aydınlatma</i>
-                                </a>
-                                <a href="#"
-                                    class="link w-full text-[#242424] inline-block text-sm font-medium py-[7px] pr-[10px] mt-[5px] pl-0 mb-[3px] border-b border-gray-300  hover:text-white hover:bg-[#44526c]">
-                                    <i class="flex  font-normal not-italic text-sm "><img src="img/chevron-right.svg">
-                                        Mobilya ve Kilit Ürünleri</i>
-                                </a>
-                                <a href="#"
-                                    class="link w-full text-[#242424] inline-block text-sm font-medium py-[7px] pr-[10px] mt-[5px] pl-0 mb-[3px] border-b border-gray-300  hover:text-white hover:bg-[#44526c] ">
-                                    <i class="flex  font-normal not-italic text-sm "><img src="img/chevron-right.svg">
-                                        Kaynak Makinaları ve Ekipmanları</i>
-                                </a>
-                                <a href="#"
-                                    class="link w-full text-[#242424] inline-block text-sm font-medium py-[7px] pr-[10px] mt-[5px] pl-0 mb-[3px] border-b border-gray-300  hover:text-white hover:bg-[#44526c]">
-                                    <i class="flex  font-normal not-italic text-sm "><img src="img/chevron-right.svg">
-                                        Kesici ve Aşındırıclar</i>
-                                </a>
-                                <a href="#"
-                                    class="link w-full text-[#242424] inline-block text-sm font-medium py-[7px] pr-[10px] mt-[5px] pl-0 mb-[3px] border-b border-gray-300  hover:text-white hover:bg-[#44526c] ">
-                                    <i class="flex  font-normal not-italic text-sm "><img src="img/chevron-right.svg">
-                                        Delici Ürünler</i>
-                                </a>
-                                <a href="#"
-                                    class="link w-full text-[#242424] inline-block text-sm font-medium py-[7px] pr-[10px] mt-[5px] pl-0 mb-[3px] border-b border-gray-300  hover:text-white hover:bg-[#44526c]">
-                                    <i class="flex  font-normal not-italic text-sm "><img src="img/chevron-right.svg">
-                                        Dübel ve Bağlantı Elemanları</i>
-                                </a>
-                                <a href="#"
-                                    class="link w-full text-[#242424] inline-block text-sm font-medium py-[7px] pr-[10px] mt-[5px] pl-0 mb-[3px] border-b border-gray-300  hover:text-white hover:bg-[#44526c]">
-                                    <i class="flex  font-normal not-italic text-sm "><img src="img/chevron-right.svg">
-                                        İş Güvenliği</i>
-                                </a>
-                                <a href="#"
-                                    class="link w-full text-[#242424] inline-block text-sm font-medium py-[7px] pr-[10px] mt-[5px] pl-0 mb-[3px] border-b border-gray-300  hover:text-white hover:bg-[#44526c]">
-                                    <i class="flex  font-normal not-italic text-sm "><img src="img/chevron-right.svg">
-                                        Bahçe Ürünleri</i>
-                                </a>
+                            <div class="box-border">
+                                <div class="text-left mt-5 box-border">
+                                    <a href="#"
+                                        class="link w-full text-[#242424] inline-block text-sm font-medium py-[7px] pr-[10px] mt-[5px] pl-0 mb-[3px] border-b border-gray-300 hover:text-white hover:bg-[#44526c]">
+                                        <i class="flex font-normal not-italic text-sm">
+                                            <img src="img/chevron-right.svg" alt="chevron-right"> Hazır Standlar
+                                        </i>
+                                    </a>
 
 
-                                <script src="public/js/animate.js"></script>
+                                    <a href="#"
+                                        class="link w-full text-[#242424] inline-block text-sm font-medium py-[7px] pr-[10px] mt-[5px] pl-0 mb-[3px] border-b border-gray-300 hover:text-white hover:bg-[#44526c]">
+                                        <i class="flex font-normal not-italic text-sm">
+                                            <img src="img/chevron-right.svg">
+                                            Bahçe Ürünü</i>
+                                    </a>
+                                    <a href="#"
+                                        class="link w-full text-[#242424] inline-block text-sm font-medium py-[7px] pr-[10px] mt-[5px] pl-0 mb-[3px] border-b border-gray-300 hover:text-white hover:bg-[#44526c]">
+                                        <i class="flex font-normal not-italic text-sm">
+                                            <img src="img/chevron-right.svg">
+                                            İnşaat</i>
+                                    </a>
+                                    <a href="#"
+                                        class="link w-full text-[#242424] inline-block text-sm font-medium py-[7px] pr-[10px] mt-[5px] pl-0 mb-[3px] border-b border-gray-300 hover:text-white hover:bg-[#44526c]">
+                                        <i class="flex font-normal not-italic text-sm">
+                                            <img src="img/chevron-right.svg">
+                                            Yapı Kimyasalları</i>
+                                    </a>
+                                    <a href="#"
+                                        class="link w-full text-[#242424] inline-block text-sm font-medium py-[7px] pr-[10px] mt-[5px] pl-0 mb-[3px] border-b border-gray-300 hover:text-white hover:bg-[#44526c]">
+                                        <i class="flex font-normal not-italic text-sm">
+                                            <img src="img/chevron-right.svg">
+                                            Hırdavat Nalburiye</i>
+                                    </a>
+                                    <a href="#"
+                                        class="link w-full text-[#242424] inline-block text-sm font-medium py-[7px] pr-[10px] mt-[5px] pl-0 mb-[3px] border-b border-gray-300 hover:text-white hover:bg-[#44526c]">
+                                        <i class="flex font-normal not-italic text-sm">
+                                            <img src="img/chevron-right.svg">
+                                            El Aletleri Grubu</i>
+                                    </a>
+                                    <a href="#"
+                                        class="link w-full text-[#242424] inline-block text-sm font-medium py-[7px] pr-[10px] mt-[5px] pl-0 mb-[3px] border-b border-gray-300 hover:text-white hover:bg-[#44526c]">
+                                        <i class="flex font-normal not-italic text-sm">
+                                            <img src="img/chevron-right.svg">
+                                            Boya ve Dekorasyon Grubu</i>
+                                    </a>
+                                    <a href="#"
+                                        class="link w-full text-[#242424] inline-block text-sm font-medium py-[7px] pr-[10px] mt-[5px] pl-0 mb-[3px] border-b border-gray-300 hover:text-white hover:bg-[#44526c]">
+                                        <i class="flex font-normal not-italic text-sm">
+                                            <img src="img/chevron-right.svg">
+                                            Mobilya ve Kilit Grubu</i>
+                                    </a>
+                                    <a href="#"
+                                        class="link w-full text-[#242424] inline-block text-sm font-medium py-[7px] pr-[10px] mt-[5px] pl-0 mb-[3px] border-b border-gray-300 hover:text-white hover:bg-[#44526c]">
+                                        <i class="flex font-normal not-italic text-sm">
+                                            <img src="img/chevron-right.svg">
+                                            Bant Grubu</i>
+                                    </a>
+                                    <a href="#"
+                                        class="link w-full text-[#242424] inline-block text-sm font-medium py-[7px] pr-[10px] mt-[5px] pl-0 mb-[3px] border-b border-gray-300 hover:text-white hover:bg-[#44526c]">
+                                        <i class="flex font-normal not-italic text-sm"><img src="img/chevron-right.svg">
+                                            Bahçe Grubu</i>
+                                    </a>
+                                    <a href="#"
+                                        class="link w-full text-[#242424] inline-block text-sm font-medium py-[7px] pr-[10px] mt-[5px] pl-0 mb-[3px] border-b border-gray-300 hover:text-white hover:bg-[#44526c]">
+                                        <i class="flex font-normal not-italic text-sm"><img src="img/chevron-right.svg">
+                                            Kesici Delici Aşındırıclar</i>
+                                    </a>
+                                    <a href="#"
+                                        class="link w-full text-[#242424] inline-block text-sm font-medium py-[7px] pr-[10px] mt-[5px] pl-0 mb-[3px] border-b border-gray-300 hover:text-white hover:bg-[#44526c]">
+                                        <i class="flex font-normal not-italic text-sm"><img src="img/chevron-right.svg">
+                                            Elektrik Malzemeleri Grubu</i>
+                                    </a>
+                                    <a href="#"
+                                        class="link w-full text-[#242424] inline-block text-sm font-medium py-[7px] pr-[10px] mt-[5px] pl-0 mb-[3px] border-b border-gray-300 hover:text-white hover:bg-[#44526c]">
+                                        <i class="flex font-normal not-italic text-sm"><img src="img/chevron-right.svg">
+                                            Tesisat Malzemeleri</i>
+                                    </a>
+                                    <a href="#"
+                                        class="link w-full text-[#242424] inline-block text-sm font-medium py-[7px] pr-[10px] mt-[5px] pl-0 mb-[3px] border-b border-gray-300 hover:text-white hover:bg-[#44526c]">
+                                        <i class="flex font-normal not-italic text-sm"><img src="img/chevron-right.svg">
+                                            Zımpara Çeşitleri</i>
+                                    </a>
+                                    <a href="#"
+                                        class="link w-full text-[#242424] inline-block text-sm font-medium py-[7px] pr-[10px] mt-[5px] pl-0 mb-[3px] border-b border-gray-300 hover:text-white hover:bg-[#44526c]">
+                                        <i class="flex font-normal not-italic text-sm"><img src="img/chevron-right.svg">
+                                            Kamp Ürünleri</i>
+                                    </a>
+                                    <a href="#"
+                                        class="link w-full text-[#242424] inline-block text-sm font-medium py-[7px] pr-[10px] mt-[5px] pl-0 mb-[3px] border-b border-gray-300 hover:text-white hover:bg-[#44526c]">
+                                        <i class="flex font-normal not-italic text-sm"><img src="img/chevron-right.svg">
+                                            Stand Çeşitleri</i>
+                                    </a>
+                                    <a href="#"
+                                        class="link w-full text-[#242424] inline-block text-sm font-medium py-[7px] pr-[10px] mt-[5px] pl-0 mb-[3px] border-b border-gray-300 hover:text-white hover:bg-[#44526c]">
+                                        <i class="flex font-normal not-italic text-sm"><img src="img/chevron-right.svg">
+                                            Elektrik Malzemeleri</i>
+                                    </a>
+                                    <a href="#"
+                                        class="link w-full text-[#242424] inline-block text-sm font-medium py-[7px] pr-[10px] mt-[5px] pl-0 mb-[3px] border-b border-gray-300 hover:text-white hover:bg-[#44526c]">
+                                        <i class="flex font-normal not-italic text-sm"><img src="img/chevron-right.svg">
+                                            Yapıştırıcı ve İzolasyon</i>
+                                    </a>
+                                    <a href="#"
+                                        class="link w-full text-[#242424] inline-block text-sm font-medium py-[7px] pr-[10px] mt-[5px] pl-0 mb-[3px] border-b border-gray-300 hover:text-white hover:bg-[#44526c]">
+                                        <i class="flex font-normal not-italic text-sm">
+                                            <img src="img/chevron-right.svg">
+                                            Boya ve Dekorasyon</i>
+                                    </a>
+                                    <a href="#"
+                                        class="link w-full text-[#242424] inline-block text-sm font-medium py-[7px] pr-[10px] mt-[5px] pl-0 mb-[3px] border-b border-gray-300 hover:text-white hover:bg-[#44526c]">
+                                        <i class="flex font-normal not-italic text-sm">
+                                            <img src="img/chevron-right.svg">
+                                            İnşaat Malzemeleri</i>
+                                    </a>
+                                    <a href="#"
+                                        class="link w-full text-[#242424] inline-block text-sm font-medium py-[7px] pr-[10px] mt-[5px] pl-0 mb-[3px] border-b border-gray-300 hover:text-white hover:bg-[#44526c]">
+                                        <i class="flex font-normal not-italic text-sm"><img src="img/chevron-right.svg">
+                                            Hırdavat ve Nalburiye</i>
+                                    </a>
+                                    <a href="#"
+                                        class="link w-full text-[#242424] inline-block text-sm font-medium py-[7px] pr-[10px] mt-[5px] pl-0 mb-[3px] border-b border-gray-300 hover:text-white hover:bg-[#44526c]">
+                                        <i class="flex font-normal not-italic text-sm"><img src="img/chevron-right.svg">
+                                            El Aletleri</i>
+                                    </a>
+                                    <a href="#"
+                                        class="link w-full text-[#242424] inline-block text-sm font-medium py-[7px] pr-[10px] mt-[5px] pl-0 mb-[3px] border-b border-gray-300 hover:text-white hover:bg-[#44526c]">
+                                        <i class="flex font-normal not-italic text-sm"><img src="img/chevron-right.svg">
+                                            Elektrikli El Aletleri</i>
+                                    </a>
+                                    <a href="#"
+                                        class="link w-full text-[#242424] inline-block text-sm font-medium py-[7px] pr-[10px] mt-[5px] pl-0 mb-[3px] border-b border-gray-300 hover:text-white hover:bg-[#44526c]">
+                                        <i class="flex font-normal not-italic text-sm"><img src="img/chevron-right.svg">
+                                            Elektrik ve Aydınlatma</i>
+                                    </a>
+                                    <a href="#"
+                                        class="link w-full text-[#242424] inline-block text-sm font-medium py-[7px] pr-[10px] mt-[5px] pl-0 mb-[3px] border-b border-gray-300 hover:text-white hover:bg-[#44526c]">
+                                        <i class="flex font-normal not-italic text-sm"><img src="img/chevron-right.svg">
+                                            Mobilya ve Kilit Ürünleri</i>
+                                    </a>
+                                    <a href="#"
+                                        class="link w-full text-[#242424] inline-block text-sm font-medium py-[7px] pr-[10px] mt-[5px] pl-0 mb-[3px] border-b border-gray-300 hover:text-white hover:bg-[#44526c]">
+                                        <i class="flex font-normal not-italic text-sm"><img src="img/chevron-right.svg">
+                                            Kaynak Makinaları ve Ekipmanları</i>
+                                    </a>
+                                    <a href="#"
+                                        class="link w-full text-[#242424] inline-block text-sm font-medium py-[7px] pr-[10px] mt-[5px] pl-0 mb-[3px] border-b border-gray-300 hover:text-white hover:bg-[#44526c]">
+                                        <i class="flex font-normal not-italic text-sm"><img src="img/chevron-right.svg">
+                                            Kesici ve Aşındırıclar</i>
+                                    </a>
+                                    <a href="#"
+                                        class="link w-full text-[#242424] inline-block text-sm font-medium py-[7px] pr-[10px] mt-[5px] pl-0 mb-[3px] border-b border-gray-300 hover:text-white hover:bg-[#44526c]">
+                                        <i class="flex font-normal not-italic text-sm"><img src="img/chevron-right.svg">
+                                            Delici Ürünler</i>
+                                    </a>
+                                    <a href="#"
+                                        class="link w-full text-[#242424] inline-block text-sm font-medium py-[7px] pr-[10px] mt-[5px] pl-0 mb-[3px] border-b border-gray-300 hover:text-white hover:bg-[#44526c]">
+                                        <i class="flex font-normal not-italic text-sm"><img src="img/chevron-right.svg">
+                                            Dübel ve Bağlantı Elemanları</i>
+                                    </a>
+                                    <a href="#"
+                                        class="link w-full text-[#242424] inline-block text-sm font-medium py-[7px] pr-[10px] mt-[5px] pl-0 mb-[3px] border-b border-gray-300 hover:text-white hover:bg-[#44526c]">
+                                        <i class="flex font-normal not-italic text-sm"><img src="img/chevron-right.svg">
+                                            İş Güvenliği</i>
+                                    </a>
+                                    <a href="#"
+                                        class="link w-full text-[#242424] inline-block text-sm font-medium py-[7px] pr-[10px] mt-[5px] pl-0 mb-[3px] border-b border-gray-300 hover:text-white hover:bg-[#44526c]">
+                                        <i class="flex font-normal not-italic text-sm"><img src="img/chevron-right.svg">
+                                            Bahçe Ürünleri</i>
+                                    </a>
+
+
+
+                                </div>
+
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
 
-        </div>
-
     </section>
+
 
 
     <!--FOOTER-->
@@ -1967,6 +1988,7 @@
 
     </footer>
 
+    <script src="{{ asset('js/animates.js') }}"></script>
 
 
 

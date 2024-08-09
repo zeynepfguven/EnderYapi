@@ -16,6 +16,7 @@ export default {
         'footerbg': "url('/img/bg-12.jpg')",
 
         'custom-gradient': 'linear-gradient(#fff, #fff)',
+        
 
 
       },
@@ -65,6 +66,9 @@ export default {
       transitionProperty: {
         'all': 'all',
       },
+      transitionTimingFunction: {
+        'custom-ease': 'ease',
+      },
       flex : {
         '0-0-50': '0 0 50%',
         '0-0-100': '0 0 100%',
@@ -75,6 +79,8 @@ export default {
         '0-0-16': '0 0 16.66666%',
         '0-0-33': '0 0 33.33333%',
         '0-0-66': '0 0 66.66666%',
+        '0-0-58': '0 0 58.33333%',
+
 
 
 

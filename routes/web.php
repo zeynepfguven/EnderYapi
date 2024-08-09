@@ -10,6 +10,10 @@ Route::get('/kurumsal', function () {
     return view('kurumsal');
 });
 
+Route::get('/detay', function () {
+    return view('detay');
+});
+
 Route::get('/e-magaza', function () {
     return view('e-magaza');
 });

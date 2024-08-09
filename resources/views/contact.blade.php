@@ -16,13 +16,16 @@
                     <div class="h-[30px] flex -mx-[15px]">
                         <div class="flex-1"></div>
                         <div class="flex-1 flex justify-end">
-                            <div class=" bg-white-10 shadow-none border-0 rounded-[5px] mr-[42px] h-[35px] relative">
+                            <div class="bg-white-10 shadow-none border-0 rounded-[5px] mr-[42px] h-[35px] relative">
                                 <a href="#"
-                                    class="text-white  flex mb-0 font-normal text-center align-middle cursor-pointer py-[6px] px-3 text-sm leading-[1.42] rounded-[4px]">
-                                    <div class="mr-2"><img src="img/log-in.svg"></div>
+                                    class="text-white flex mb-0 font-normal text-center align-middle cursor-pointer py-[6px] px-3 text-sm leading-[1.42] rounded-[4px] hover:text-white hover:border hover:border-white hover:bg-white hover:bg-opacity-30">
+                                    <div class="mr-2">
+                                        <img src="img/log-in.svg" alt="Login Icon">
+                                    </div>
                                     BAYİ GİRİŞİ
                                 </a>
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -50,12 +53,12 @@
                                     </div>
                                 </div>
                                 <div class="mt-[2px] inline-block float-left ml-[45px] box-border items-center">
-                                    <form action="" class="relative ">
-                                        <input type="text"
-                                            class="bg-white-10 shadow-none border-0 rounded-[50px]  text-sm h-[45px] py-0 pr-[18px] pl-[50px] w-[330px]">
+                                    <form action="" class="relative">
+                                        <input type="text" placeholder="Ne aramıştınız?..."
+                                            class="bg-white-10 shadow-none border-0 rounded-[50px] text-sm h-[45px] py-0 pr-[18px] pl-[50px] w-[330px]">
                                         <button
-                                            class="absolute bg-transparent border-0 cursor-pointer  py-auto px-5  right-0   transform translate-y--1/2 transition-all duration-300 ease delay-0 ">
-                                            <img src="img/search.svg" class="">
+                                            class="absolute bg-transparent border-0 cursor-pointer py-auto px-5 right-0 top-1/2 transform -translate-y-1/2 transition-all duration-300 ease delay-0">
+                                            <img src="img/search.svg" alt="search">
                                         </button>
                                     </form>
                                 </div>
@@ -87,13 +90,13 @@
                         <nav class="inline-block">
                             <ul class="text-left flex justify-between space-x-[49px]">
                                 <li class="inline-block relative whitespace-nowrap text-white group">
-                                    <a href="{{ url('/welcome') }}"
+                                <a href="{{ url('/') }}"
                                         class="text-white inline-block font-normal leading-[55px] uppercase transition-all duration-500 ease-in-out transform group-hover:translate-y-[55px] group-hover:opacity-0">
                                         ANA SAYFA
                                     </a>
                                     <span
                                         class="absolute top-0 left-0 w-full h-full flex items-center justify-center opacity-0 transition-opacity duration-500 ease-in-out transform -translate-y-[55px] group-hover:translate-y-0 group-hover:opacity-100">
-                                        <a href="{{ url('/welcome') }}"
+                                        <a href="{{ url('/')  }}"
                                             class="relative text-white border-b-2 border-red-500">
 
                                             ANA SAYFA
@@ -179,21 +182,24 @@
         </header>
     </section>
     <section class="border-b border-[#ebebeb]">
-        <div class="max-w-[1200px] mx-auto">
+    <div class="max-w-[1200px] mx-auto">
             <div class="border-none border-medium p-custom bg-white">
                 <div class="flex flex-wrap mx-[-5px]">
                     <div class="px-[5px] flex-0-0-100 max-w-full">
                         <div class="mt-[10px] relative text-center">
                             <h4 class="text-[#a80e10] font-semibold text-sm">KURUMSAL EKİP PROFESYONEL ÇÖZÜM</h4>
-                            <p class="text-[#333] m-o text-[13px] leading-[18px]">Geniş Ürün Yelpazesi, Güçlü Pazarlama
+                            <p class="text-[#333] m-o0 text-[13px] leading-[18px]">Geniş Ürün Yelpazesi, Güçlü Pazarlama
                                 ve Dağıtım Ağı İle Türkiye Çapında Güvenilir Yapı Malzemeleri Tedariğinde Lider</p>
-                            <div
-                                class="absolute left-1/2 transform -translate-x-1/2 z-[99] border-t-[70px] border-l-[120px] border-r-[120px] border-l-transparent border-r-transparent border-t-[#fff] border-solid">
+                            <div class="relative z-[99]">
+                                <div
+                                    class="absolute left-1/2 transform -translate-x-1/2 border-t-[70px] border-l-[120px] border-r-[120px] border-l-transparent border-r-transparent border-t-[#fff] border-solid">
+                                </div>
                                 <img src="img/logo3.png" alt=""
-                                    class="absolute top-[-50px] left-1/2 transform -translate-x-1/2">
+                                    class="absolute left-1/2 mt-5 transform -translate-x-1/2 top-[75%]">
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>

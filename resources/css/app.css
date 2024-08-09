@@ -2,3 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+.active {
+    @apply bg-[#44526c] text-white;
+}
+
+.link.active {
+    color: white;
+    background-color: #44526c;
+}
+
+a.active {
+    background-color: #44526c;
+    color: white; 
+}

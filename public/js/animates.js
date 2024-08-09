@@ -40,3 +40,29 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+document.addEventListener('DOMContentLoaded', () => {
+
+const links = document.querySelectorAll('.link');
+
+links.forEach(link => {
+    link.addEventListener('click', function(event) {
+        event.preventDefault();
+
+        links.forEach(link => link.classList.remove('active'));
+
+        this.classList.add('active');
+    });
+});
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const items = document.querySelectorAll('ul li a');
+
+    items.forEach(item => {
+        item.addEventListener('click', function() {
+            items.forEach(i => i.classList.remove('active'));
+            this.classList.add('active');
+        });
+    });
+});

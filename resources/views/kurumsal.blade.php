@@ -16,13 +16,16 @@
                     <div class="h-[30px] flex -mx-[15px]">
                         <div class="flex-1"></div>
                         <div class="flex-1 flex justify-end">
-                            <div class=" bg-white-10 shadow-none border-0 rounded-[5px] mr-[42px] h-[35px] relative">
+                            <div class="bg-white-10 shadow-none border-0 rounded-[5px] mr-[42px] h-[35px] relative">
                                 <a href="#"
-                                    class="text-white  flex mb-0 font-normal text-center align-middle cursor-pointer py-[6px] px-3 text-sm leading-[1.42] rounded-[4px]">
-                                    <div class="mr-2"><img src="img/log-in.svg"></div>
+                                    class="text-white flex mb-0 font-normal text-center align-middle cursor-pointer py-[6px] px-3 text-sm leading-[1.42] rounded-[4px] hover:text-white hover:border hover:border-white hover:bg-white hover:bg-opacity-30">
+                                    <div class="mr-2">
+                                        <img src="img/log-in.svg" alt="Login Icon">
+                                    </div>
                                     BAYİ GİRİŞİ
                                 </a>
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -50,12 +53,12 @@
                                     </div>
                                 </div>
                                 <div class="mt-[2px] inline-block float-left ml-[45px] box-border items-center">
-                                    <form action="" class="relative ">
-                                        <input type="text"
-                                            class="bg-white-10 shadow-none border-0 rounded-[50px]  text-sm h-[45px] py-0 pr-[18px] pl-[50px] w-[330px]">
+                                    <form action="" class="relative">
+                                        <input type="text" placeholder="Ne aramıştınız?..."
+                                            class="bg-white-10 shadow-none border-0 rounded-[50px] text-sm h-[45px] py-0 pr-[18px] pl-[50px] w-[330px]">
                                         <button
-                                            class="absolute bg-transparent border-0 cursor-pointer  py-auto px-5  right-0   transform translate-y--1/2 transition-all duration-300 ease delay-0 ">
-                                            <img src="img/search.svg" class="">
+                                            class="absolute bg-transparent border-0 cursor-pointer py-auto px-5 right-0 top-1/2 transform -translate-y-1/2 transition-all duration-300 ease delay-0">
+                                            <img src="img/search.svg" alt="search">
                                         </button>
                                     </form>
                                 </div>
@@ -87,13 +90,13 @@
                         <nav class="inline-block">
                             <ul class="text-left flex justify-between space-x-[49px]">
                                 <li class="inline-block relative whitespace-nowrap text-white group">
-                                    <a href="{{ url('/welcome') }}"
+                                    <a href="{{ url('/') }}"
                                         class="text-white inline-block font-normal leading-[55px] uppercase transition-all duration-500 ease-in-out transform group-hover:translate-y-[55px] group-hover:opacity-0">
                                         ANA SAYFA
                                     </a>
                                     <span
                                         class="absolute top-0 left-0 w-full h-full flex items-center justify-center opacity-0 transition-opacity duration-500 ease-in-out transform -translate-y-[55px] group-hover:translate-y-0 group-hover:opacity-100">
-                                        <a href="{{ url('/welcome') }}"
+                                        <a href="{{ url('/')  }}"
                                             class="relative text-white border-b-2 border-red-500">
 
                                             ANA SAYFA
@@ -179,96 +182,146 @@
         </header>
     </section>
     <section class="border-b border-[#ebebeb]">
-    <div class="max-w-[1200px] mx-auto">
-        <div class="border-none border-medium p-custom bg-white">
-            <div class="flex flex-wrap mx-[-5px]">
-                <div class="px-[5px] flex-0-0-100 max-w-full">
-                    <div class="mt-[10px] relative text-center">
-                        <h4 class="text-[#a80e10] font-semibold text-sm">KURUMSAL EKİP PROFESYONEL ÇÖZÜM</h4>
-                        <p class="text-[#333] m-o text-[13px] leading-[18px]">Geniş Ürün Yelpazesi, Güçlü Pazarlama
-                            ve Dağıtım Ağı İle Türkiye Çapında Güvenilir Yapı Malzemeleri Tedariğinde Lider</p>
-                        <div
-                            class="absolute left-1/2 transform -translate-x-1/2 z-[99] border-t-[70px] border-l-[120px] border-r-[120px] border-l-transparent border-r-transparent border-t-[#fff] border-solid">
-                            <img src="img/logo3.png" alt=""
-                                class="absolute top-[-50px] left-1/2 transform -translate-x-1/2">
+        <div class="max-w-[1200px] mx-auto">
+            <div class="border-none border-medium p-custom bg-white">
+                <div class="flex flex-wrap mx-[-5px]">
+                    <div class="px-[5px] flex-0-0-100 max-w-full">
+                        <div class="mt-[10px] relative text-center">
+                            <h4 class="text-[#a80e10] font-semibold text-sm">KURUMSAL EKİP PROFESYONEL ÇÖZÜM</h4>
+                            <p class="text-[#333] m-o0 text-[13px] leading-[18px]">Geniş Ürün Yelpazesi, Güçlü Pazarlama
+                                ve Dağıtım Ağı İle Türkiye Çapında Güvenilir Yapı Malzemeleri Tedariğinde Lider</p>
+                            <div class="relative z-[99]">
+                                <div
+                                    class="absolute left-1/2 transform -translate-x-1/2 border-t-[70px] border-l-[120px] border-r-[120px] border-l-transparent border-r-transparent border-t-[#fff] border-solid">
+                                </div>
+                                <img src="img/logo3.png" alt=""
+                                    class="absolute left-1/2 mt-5 transform -translate-x-1/2 top-[75%]">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="py-[21px] px-0  bg-[#dfe7ec] box-border">
+            <div class="max-w-[1200px] mx-auto ">
+                <div class="box-border">
+                    <ul class="m-0 p-0">
+                        <li class="text-[#2f4264] inline-block text-sm mr-7 relative box-border">
+                            <a href="#" class="text-[#242424]">Ana Sayfa</a>
+                        </li>
+                        <li class="text-[#2f4264] inline-block text-sm mr-7 relative box-border">
+                            <a href="#" class="text-[#242424]">/</a>
+                        </li>
+                        <li class="text-[#2f4264] inline-block text-sm mr-7 relative box-border">
+                            <a href="#" class="text-[#242424]">Kurumsal</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <section class="pb-5 pt-5 mb-10 mt-10 box-border">
+            <div class="max-w-[1200px] mx-auto pr-[15px] pl-[15px]">
+                <div class="flex flex-wrap mr-[-15px] ml-[-15px] box-border">
+                    <div class="item-center flex-col flex-0-0-50 max-w-[50%] pb-[12px]">
+                        <div class="box-border border-b-[1px] mb-[30px]">
+                            <h2 class="text-4xl font-normal mb-2 pb-7 relative uppercase">ENDER YAPI</h2>
+                        </div>
+                        <div class="box-border">
+                            <p class="text-sm">Uzman satış ve pazarlama kadrosu ile hizmet Veren, İleri teknoloji ve
+                                yenilikçi
+                                ürünleri içinde barındıran geniş ürün çeşidini stoklarında bulunduran , tedarik
+                                koordinasyon
+                                ve lojistik açısından hızlı ve güvenilir bir dağıtım ağına sahip olan ENDER YAPI Türkiye
+                                genelinde hizmet verdiği bayi satış kanalları ile bir uyum içerisinde çalışmaktadır. Bu
+                                güvenin verdiği mutlulukla çalışmaya ve müşterileri ile birlikte büyüme anlayışı ile
+                                hizmet
+                                vermeye devam etmektedir.</p>
+                        </div>
+                        <div class="box-border">
+                            <br>
+                            <div class="box-border block">Sizinle Çalışmaktan Mutluluk Duyarız...</div>
+                        </div>
+                    </div>
+                    <div
+                        class="item-center flex flex-0-0-50 max-w-[50%] relative w-full pr-[15px] pl-[15px] min-h-[1px]">
+                        <div class="text-center box-border relative overflow-hidden mb-[15px]">
+                            <img src="img/kurumsal.jpg">
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
 
-    <div class="py-[21px] px-0  bg-[#dfe7ec] box-border">
-        <div class="max-w-[1200px] mx-auto ">
-            <div class="box-border">
-                <ul class="m-0 p-0">
-                    <li class="text-[#2f4264] inline-block text-sm mr-7 relative box-border">
-                        <a href="#" class="text-[#242424]">Ana Sayfa</a>
-                    </li>
-                    <li class="text-[#2f4264] inline-block text-sm mr-7 relative box-border">
-                        <a href="#" class="text-[#242424]">/</a>
-                    </li>
-                    <li class="text-[#2f4264] inline-block text-sm mr-7 relative box-border">
-                        <a href="#" class="text-[#242424]">Kurumsal</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
 
-    <section class="pb-5 pt-5 mb-10 mt-10 box-border">
-        <div class="max-w-[1200px] mx-auto pr-[15px] pl-[15px]">
-            <div class="flex flex-wrap mr-[-15px] ml-[-15px] box-border">
-                <div class="item-center flex-col flex-0-0-50 max-w-[50%] pb-[12px]">
-                    <div class="box-border border-b-[1px] mb-[30px]">
-                        <h2 class="text-4xl font-normal mb-2 pb-7 relative uppercase">ENDER YAPI</h2>
-                    </div>
-                    <div class="box-border">
-                        <p class="text-sm">Uzman satış ve pazarlama kadrosu ile hizmet Veren, İleri teknoloji ve yenilikçi
-                            ürünleri içinde barındıran geniş ürün çeşidini stoklarında bulunduran , tedarik koordinasyon
-                            ve lojistik açısından hızlı ve güvenilir bir dağıtım ağına sahip olan ENDER YAPI Türkiye
-                            genelinde hizmet verdiği bayi satış kanalları ile bir uyum içerisinde çalışmaktadır. Bu
-                            güvenin verdiği mutlulukla çalışmaya ve müşterileri ile birlikte büyüme anlayışı ile hizmet
-                            vermeye devam etmektedir.</p>
-                    </div>
-                    <div class="box-border">
-                        <br>
-                        <div class="box-border block">Sizinle Çalışmaktan Mutluluk Duyarız...</div>
-                    </div>
-                </div>
-                <div class="item-center flex flex-0-0-50 max-w-[50%] relative w-full pr-[15px] pl-[15px] min-h-[1px]">
-                    <div class="text-center box-border relative overflow-hidden mb-[15px]">
-                        <img src="img/kurumsal.jpg">
-                    </div>
-                </div>
+
             </div>
 
-            
-
+        </section>
+        <div class="flex justify-end mt-[20px]">
+            <div id="prevButton"
+                class="bg-[#efefef] rounded-[3px]  text-[16px] leading-[35px] opacity-1 text-center h-[35px] w-[35px] hover:bg-[#44526c] flex items-center justify-center group mr-[10px]">
+                <i class="box-border">
+                    <img src="img/chevron-left.svg" class="transition-colors duration-300 group-hover:fill-white">
+                </i>
+            </div>
+            <div id="nextButton"
+                class="bg-[#efefef] rounded-[3px] text-[16px] leading-[35px] opacity-1 text-center h-[35px] w-[35px] hover:bg-[#44526c] flex items-center justify-center group">
+                <i class="box-border">
+                    <img src="img/chevron-right2.svg" class="transition-colors duration-300 group-hover:fill-white">
+                </i>
+            </div>
         </div>
-        
     </section>
-    <div class="flex justify-end mt-[20px]">
-                <div id="prevButton"
-                    class="bg-[#efefef] rounded-[3px]  text-[16px] leading-[35px] opacity-1 text-center h-[35px] w-[35px] hover:bg-[#44526c] flex items-center justify-center group mr-[10px]">
-                    <i class="box-border">
-                        <img src="img/chevron-left.svg" class="transition-colors duration-300 group-hover:fill-white">
-                    </i>
-                </div>
-                <div id="nextButton"
-                    class="bg-[#efefef] rounded-[3px] text-[16px] leading-[35px] opacity-1 text-center h-[35px] w-[35px] hover:bg-[#44526c] flex items-center justify-center group">
-                    <i class="box-border">
-                        <img src="img/chevron-right2.svg" class="transition-colors duration-300 group-hover:fill-white">
-                    </i>
-                </div>
-            </div>
-</section>
 
 
 
     <div class="bg-[#ededed] block w-full z-[1] relative pt-10">
         <div class="bg-[#ededed] relative overflow-hidden box-border">
             <div class="transition-all w-[14734px] relative box-border">
+                <div>
+                    <div class="w-[698.667px] mr-4 float-left min-h-[1px]">
+                        <div class="mr-0 min-h-[1px] float-left">
+                            <div class="bg-white mt-[15px] box-border relative z-[10]">
+                                <div class="rounded-[3px] flex mb-[50px]">
+                                    <div class="p-2.5 relative flex-0-0-180 box-border">
+                                        <div class="relative overflow-hidden box-border">
+                                            <a href="#" class="transition-all duration-300 ease-out delay-0">
+                                                <img src="img/a.jpg"
+                                                    class="block w-full transition-all duration-1500 ease-in-out delay-0 transform duration-500 hover:scale-110">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="m-5 pt-[13px] pr-[13px] pb-[5px] pl-[10px] relative">
+                                        <span
+                                            class="text-[13px] bg-[#f9f9f9] rounded-[3px] text-[#555] leading-[1px] relative top-[-10px] z-[99] pt-1.5 pr-3.5 pb-1.25 pl-3.5">SK:
+                                            079 22250</span>
+                                        <h4 class="text-sm leading-[18px] mt-[2px] mb-[13px] mx-0 font-semibold">
+                                            <a href="#" class="text-[#242424]">
+                                                <h2 class="text-sm not-italic font-normal text-[#242424] mt-0">İthal
+                                                    Ağaç
+                                                    Delme Matkap Ucu 22x250</h2>
+                                            </a>
+                                        </h4>
+                                        <div class="block transition-all duration-300 ease-out delay-0">
+                                            <div class="relative">
+                                                <a href="#"
+                                                    class="bg-[#ffb463] text-white py-2 px-4 rounded-[3px] inline-block">
+                                                    <span>Detaylar</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="text-sm">
+                                            <span class="p-[6px] text-sm rounded-[3px] leading-[2px]">204,82 TL +20
+                                                Kdv</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="w-[698.667px] mr-4 float-left min-h-[1px]">
                     <div class="mr-0 min-h-[1px] float-left">
                         <div class="bg-white mt-[15px] box-border relative z-[10]">
@@ -277,7 +330,7 @@
                                     <div class="relative overflow-hidden box-border">
                                         <a href="#" class="transition-all duration-300 ease-out delay-0">
                                             <img src="img/a.jpg"
-                                                class="block w-full transition-all duration-1500 ease-in-out delay-0">
+                                                class="block w-full transition-all duration-1500 ease-in-out delay-0 transform duration-500 hover:scale-110">
                                         </a>
                                     </div>
                                 </div>
@@ -318,7 +371,7 @@
                                     <div class="relative overflow-hidden box-border">
                                         <a href="#" class="transition-all duration-300 ease-out delay-0">
                                             <img src="img/a.jpg"
-                                                class="block w-full transition-all duration-1500 ease-in-out delay-0">
+                                                class="block w-full transition-all duration-1500 ease-in-out delay-0 transform duration-500 hover:scale-110">
                                         </a>
                                     </div>
                                 </div>
@@ -350,7 +403,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="w-[698.667px] mr-4 float-left min-h-[1px]">
                     <div class="mr-0 min-h-[1px] float-left">
                         <div class="bg-white mt-[15px] box-border relative z-[10]">
@@ -359,7 +411,7 @@
                                     <div class="relative overflow-hidden box-border">
                                         <a href="#" class="transition-all duration-300 ease-out delay-0">
                                             <img src="img/a.jpg"
-                                                class="block w-full transition-all duration-1500 ease-in-out delay-0">
+                                                class="block w-full transition-all duration-1500 ease-in-out delay-0 transform duration-500 hover:scale-110">
                                         </a>
                                     </div>
                                 </div>
@@ -386,7 +438,47 @@
                                             Kdv</span>
                                     </div>
 
-                             </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-[698.667px] mr-4 float-left min-h-[1px]">
+                    <div class="mr-0 min-h-[1px] float-left">
+                        <div class="bg-white mt-[15px] box-border relative z-[10]">
+                            <div class="rounded-[3px] flex mb-[50px]">
+                                <div class="p-2.5 relative flex-0-0-180 box-border">
+                                    <div class="relative overflow-hidden box-border">
+                                        <a href="#" class="transition-all duration-300 ease-out delay-0">
+                                            <img src="img/a.jpg"
+                                                class="block w-full transition-all duration-1500 ease-in-out delay-0 transform duration-500 hover:scale-110">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="m-5 pt-[13px] pr-[13px] pb-[5px] pl-[10px] relative">
+                                    <span
+                                        class="text-[13px] bg-[#f9f9f9] rounded-[3px] text-[#555] leading-[1px] relative top-[-10px] z-[99] pt-1.5 pr-3.5 pb-1.25 pl-3.5">SK:
+                                        079 22250</span>
+                                    <h4 class="text-sm leading-[18px] mt-[2px] mb-[13px] mx-0 font-semibold">
+                                        <a href="#" class="text-[#242424]">
+                                            <h2 class="text-sm not-italic font-normal text-[#242424] mt-0">İthal Ağaç
+                                                Delme Matkap Ucu 22x250</h2>
+                                        </a>
+                                    </h4>
+                                    <div class="block transition-all duration-300 ease-out delay-0">
+                                        <div class="relative">
+                                            <a href="#"
+                                                class="bg-[#ffb463] text-white py-2 px-4 rounded-[3px] inline-block">
+                                                <span>Detaylar</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="text-sm">
+                                        <span class="p-[6px] text-sm rounded-[3px] leading-[2px]">204,82 TL +20
+                                            Kdv</span>
+                                    </div>
+
+                                </div>
                             </div>
                         </div>
                     </div>
