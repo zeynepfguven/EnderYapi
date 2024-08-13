@@ -9,9 +9,7 @@ export default {
       backgroundImage: {
         'bg-header': "url('/img/bg-10.jpg')",
         'headershape': "url('/img/header-shape.png')",
-        'slider1': "url('/img/slider-28.jpg')",
-        'slider2': "url('/img/slider-29.jpg')",
-        'slider3': "url('/img/slider-27.jpg')",
+        
         'pattern': "url('/img/pattern2.png')",
         'footerbg': "url('/img/bg-12.jpg')",
 

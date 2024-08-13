@@ -29,3 +29,22 @@ Route::get('/e-katalog', function () {
 Route::get('/contact', function () {
     return view('contact');
 });
+
+Route::get('/page2', function () {
+    return view('page2');
+});
+Route::get('/page3', function () {
+    return view('page3');
+});
+
+Route::get('/bahce', function () {
+    return view('bahce');
+});
+
+Route::get('/standlar', function () {
+    return view('standlar');
+});
+
+Route::get('/insaat', function () {
+    return view('insaat');
+});

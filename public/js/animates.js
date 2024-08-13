@@ -66,3 +66,29 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+
+const carousel = document.getElementById('carousel');
+const nextButton = document.getElementById('next');
+const prevButton = document.getElementById('prev');
+
+let offset = 0; // Başlangıç konumu
+const slideWidth = 698.667 + 16; // Slayt genişliği + margin-right (px)
+const totalSlides = document.querySelectorAll('.carousel-item').length;
+const maxOffset = -(totalSlides - 1) * slideWidth;
+
+nextButton.addEventListener('click', () => {
+    if (offset > maxOffset) {
+        offset -= slideWidth;
+        carousel.style.transform = `translateX(${offset}px)`;
+    }
+});
+
+prevButton.addEventListener('click', () => {
+    if (offset < 0) {
+        offset += slideWidth;
+        carousel.style.transform = `translateX(${offset}px)`;
+    }
+});
+});

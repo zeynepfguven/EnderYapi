@@ -10,12 +10,12 @@
 <body>
     <!--HEADER SECTION-->
     <section>
-        <header class="2xl:pb-15 2xl:float-left block box-border bg-bg-header h-[258px] w-full">
-            <div class="border-b border-[#3d3d3f] pb-[13px] pt-2.5">
+        <header
+            class="2xl:pb-15 2xl:float-left xl:pb-15 xl:float-left xl:block block box-border bg-bg-header h-[258px] w-full">
+            <div class="border-b border-[#3d3d3f] pb-[13px] pt-2.5 lg:mx-2 lg:p-2 ">
                 <div class="max-w-[1200px] mx-auto">
                     <div class="h-[30px] flex -mx-[15px]">
-                        <div class="flex-1"></div>
-                        <div class="flex-1 flex justify-end">
+                        <div class="flex-1 flex justify-end ">
                             <div class="bg-white-10 shadow-none border-0 rounded-[5px] mr-[42px] h-[35px] relative">
                                 <a href="#"
                                     class="text-white flex mb-0 font-normal text-center align-middle cursor-pointer py-[6px] px-3 text-sm leading-[1.42] rounded-[4px] hover:text-white hover:border hover:border-white hover:bg-white hover:bg-opacity-30">
@@ -30,7 +30,7 @@
                     </div>
                 </div>
             </div>
-            <div class="px-0 py-10 box-border ">
+            <div class="px-0 py-10 box-border lg:mx-2">
                 <div class="px-[15px] mx-auto max-w-[1200px]">
                     <div class="flex flex-wrap -mx-[15px] ">
                         <div class="flex-0-0-25 max-w-[25%]">
@@ -62,6 +62,8 @@
                                         </button>
                                     </form>
                                 </div>
+
+
                                 <div class="relative inline-block float-left ml-[45px]">
                                     <div class="box-border block">
                                         <a href="outline-0 " class="transition-all duration-300 ease-out">
@@ -84,20 +86,19 @@
                 </div>
             </div>
 
-            <div class="bg-headershape bg-no-repeat text-white w-full relative ">
-                <div class="max-w-[1200px]  bg-top mx-auto">
-                    <div class=" justify-between box-border ">
+            <div class="bg-headershape bg-no-repeat text-white w-full relative">
+                <div class="max-w-[1200px] bg-top mx-auto">
+                    <div class="justify-between box-border">
                         <nav class="inline-block">
                             <ul class="text-left flex justify-between space-x-[49px]">
-                                <li class="inline-block relative whitespace-nowrap text-white group">
-                                    <a href="{{ url('/') }}"
-                                        class="text-white inline-block font-normal leading-[55px] uppercase transition-all duration-500 ease-in-out transform group-hover:translate-y-[55px] group-hover:opacity-0">
+                            <li class="inline-block relative whitespace-nowrap text-white group">
+                                    <a href="#"
+                                        class="text-white inline-block font-normal leading-[55px] uppercase transition-all duration-500 ease-in-out transform group-hover:translate-y-[55px] group-hover:opacity-0 delay-75">
                                         ANA SAYFA
                                     </a>
                                     <span
-                                        class="absolute top-0 left-0 w-full h-full flex items-center justify-center opacity-0 transition-opacity duration-500 ease-in-out transform -translate-y-[55px] group-hover:translate-y-0 group-hover:opacity-100">
-                                        <a href="{{ url('/')  }}" class="relative text-white border-b-2 border-red-500">
-
+                                        class="absolute top-0 left-0 w-full h-full flex items-center justify-center opacity-0 transition-opacity duration-500 ease-in-out transform translate-y-[20px] group-hover:translate-y-0 group-hover:opacity-100 delay-100">
+                                        <a href="#" class="relative text-white border-b-2 border-red-500">
                                             ANA SAYFA
                                         </a>
                                     </span>
@@ -108,7 +109,7 @@
                                         KURUMSAL
                                     </a>
                                     <span
-                                        class="absolute top-0 left-0 w-full h-full flex items-center justify-center opacity-0 transition-opacity duration-500 ease-in-out transform -translate-y-[55px] group-hover:translate-y-0 group-hover:opacity-100">
+                                        class="absolute top-0 left-0 w-full h-full flex items-center justify-center opacity-0 transition-opacity duration-500 ease-in-out transform translate-y-[20px] group-hover:translate-y-0 group-hover:opacity-100">
                                         <a href="{{ url('/kurumsal') }}"
                                             class="relative text-white border-b-2 border-red-500">
 
@@ -122,7 +123,7 @@
                                         E-MAĞAZA
                                     </a>
                                     <span
-                                        class="absolute top-0 left-0 w-full h-full flex items-center justify-center opacity-0 transition-opacity duration-500 ease-in-out transform -translate-y-[55px] group-hover:translate-y-0 group-hover:opacity-100">
+                                        class="absolute top-0 left-0 w-full h-full flex items-center justify-center opacity-0 transition-opacity duration-500 ease-in-out transform translate-y-[20px] group-hover:translate-y-0 group-hover:opacity-100">
                                         <a href="{{ url('/e-magaza') }}"
                                             class="relative text-white border-b-2 border-red-500">
 
@@ -136,7 +137,7 @@
                                         KAMPANYA
                                     </a>
                                     <span
-                                        class="absolute top-0 left-0 w-full h-full flex items-center justify-center opacity-0 transition-opacity duration-500 ease-in-out transform -translate-y-[55px] group-hover:translate-y-0 group-hover:opacity-100">
+                                        class="absolute top-0 left-0 w-full h-full flex items-center justify-center opacity-0 transition-opacity duration-500 ease-in-out transform translate-y-[20px] group-hover:translate-y-0 group-hover:opacity-100">
                                         <a href="{{ url('/kampanya') }}"
                                             class="relative text-white border-b-2 border-red-500">
 
@@ -150,7 +151,7 @@
                                         E-KATALOG
                                     </a>
                                     <span
-                                        class="absolute top-0 left-0 w-full h-full flex items-center justify-center opacity-0 transition-opacity duration-500 ease-in-out transform -translate-y-[55px] group-hover:translate-y-0 group-hover:opacity-100">
+                                        class="absolute top-0 left-0 w-full h-full flex items-center justify-center opacity-0 transition-opacity duration-500 ease-in-out transform translate-y-[20px] group-hover:translate-y-0 group-hover:opacity-100">
                                         <a href="{{ url('/e-katalog') }}"
                                             class="relative text-white border-b-2 border-red-500">
 
@@ -164,7 +165,7 @@
                                         İLETİŞİM
                                     </a>
                                     <span
-                                        class="absolute top-0 left-0 w-full h-full flex items-center justify-center opacity-0 transition-opacity duration-500 ease-in-out transform -translate-y-[55px] group-hover:translate-y-0 group-hover:opacity-100">
+                                        class="absolute top-0 left-0 w-full h-full flex items-center justify-center opacity-0 transition-opacity duration-500 ease-in-out transform translate-y-[20px] group-hover:translate-y-0 group-hover:opacity-100">
                                         <a href="{{ url('/contact') }}"
                                             class="relative text-white border-b-2 border-red-500">
 
@@ -174,6 +175,8 @@
                                 </li>
                             </ul>
                         </nav>
+
+
                     </div>
                 </div>
             </div>
@@ -221,7 +224,7 @@
         </div>
     </div>
 
-    <section class="pb-10 pt-10 mb-10 mt-10 box-border bg-[#f2f2f2] ">
+    <section class="pb-10 pt-10 mb-10  box-border bg-[#f2f2f2] ">
         <div class="max-w-[1200px] mx-auto flex-row-reverse	 flex flex-wrap ">
 
             <div class="flex-0-0-75 max-w-[75%] flex-col">
@@ -1512,17 +1515,17 @@
                     <div class="flex justify-between w-full">
                         <ul class="m-0 p-0 flex-1">
                             <li class="inline-block mt-2 mx-px mb-0">
-                                <a href="#"
+                                <a href="{{ url('/e-magaza') }}"
                                     class="text-[#454545] bg-[#f1f1f1] rounded-[3px] block text-center w-8 h-8 items-center justify-center border-none border-[#d4d4d4] hover:bg-[#44526c] hover:text-white">1</a>
                             </li>
 
                             <li class="inline-block mt-2 mx-px mb-0">
-                                <a href="#"
+                                <a href="{{ url('/page2') }}"
                                     class="text-[#454545] bg-[#f1f1f1] rounded-[3px] block text-center w-8 h-8 items-center justify-center border-none border-[#d4d4d4] hover:bg-[#44526c] hover:text-white">2</a>
                             </li>
 
                             <li class="inline-block mt-2 mx-px mb-0">
-                                <a href="#"
+                                <a href="{{ url('/page3') }}"
                                     class="text-[#454545] bg-[#f1f1f1] rounded-[3px] block text-center w-8 h-8 items-center justify-center border-none border-[#d4d4d4] hover:bg-[#44526c] hover:text-white">3</a>
                             </li>
 
@@ -1589,7 +1592,7 @@
                         <div class="box-border ">
                             <div class="box-border">
                                 <div class="text-left mt-5 box-border">
-                                    <a href="#"
+                                    <a href="{{ url('/standlar') }}"
                                         class="link w-full text-[#242424] inline-block text-sm font-medium py-[7px] pr-[10px] mt-[5px] pl-0 mb-[3px] border-b border-gray-300 hover:text-white hover:bg-[#44526c]">
                                         <i class="flex font-normal not-italic text-sm">
                                             <img src="img/chevron-right.svg" alt="chevron-right"> Hazır Standlar
@@ -1597,13 +1600,13 @@
                                     </a>
 
 
-                                    <a href="#"
+                                    <a href="{{ url('/bahce') }}"
                                         class="link w-full text-[#242424] inline-block text-sm font-medium py-[7px] pr-[10px] mt-[5px] pl-0 mb-[3px] border-b border-gray-300 hover:text-white hover:bg-[#44526c]">
                                         <i class="flex font-normal not-italic text-sm">
                                             <img src="img/chevron-right.svg">
                                             Bahçe Ürünü</i>
                                     </a>
-                                    <a href="#"
+                                    <a href="{{ url('/insaat') }}"
                                         class="link w-full text-[#242424] inline-block text-sm font-medium py-[7px] pr-[10px] mt-[5px] pl-0 mb-[3px] border-b border-gray-300 hover:text-white hover:bg-[#44526c]">
                                         <i class="flex font-normal not-italic text-sm">
                                             <img src="img/chevron-right.svg">
@@ -1775,11 +1778,12 @@
 
     <!--FOOTER-->
 
+  
     <footer
-        class="box-border relative z-20  bg-footerbg pt-[60px] bg-cover bg-center w-full h-auto border-t-[10px] border-t-white">
+        class="box-border relative z-20  bg-footerbg pt-[60px] bg-cover bg-center w-full h-auto border-t-[10px] border-t-white ">
         <div class="max-w-[1200px] w-full mx-auto">
-            <div class="px-[15px] flex flex-wrap -mx-[15px]">
-                <div class="mb-[30px] flex-0-0-[41.66%] max-w-[41.66%]">
+            <div class="px-[15px] flex flex-wrap -mx-[15px] lg:p-2 lg:mx-2">
+                <div class="mb-[30px] flex-0-0-[41.66%] max-w-[41.66%] ">
                     <div class="mb-10 box-border">
                         <div class=" border-b-[1px] border-b-[#333] pb-[15px] mb-[30px] box-border">
                             <h4 class="text-white font-medium text-xl m-0">Ürün Kategorisi</h4>
@@ -1965,7 +1969,7 @@
                 </div>
 
             </div>
-            <div class="px-[15px]  flex flex-wrap -mx-[15px] border-t border-t-1 border-t-[#333]">
+            <div class="px-[15px]  flex flex-wrap -mx-[15px] border-t border-t-1 border-t-[#333] lg:p-2 lg:mx-2">
                 <div class="pb-[30px] pt-[25px] mt-2.5 box-border flex justify-between w-full">
                     <div class="max-w-[50%] flex flex-wrap -mx-[15px] ">
                         <div class="flex float-left ">
@@ -1987,6 +1991,7 @@
         </div>
 
     </footer>
+
 
     <script src="{{ asset('js/animates.js') }}"></script>
 

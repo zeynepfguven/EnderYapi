@@ -224,141 +224,186 @@
         </div>
     </div>
 
-    <section class=" pt-10 mb-10 box-border bg-[#f2f2f2] ">
+    <section class="pb-10 pt-10 mb-10  box-border bg-[#f2f2f2] ">
         <div class="max-w-[1200px] mx-auto flex-row-reverse	 flex flex-wrap ">
 
             <div class="flex-0-0-75 max-w-[75%] flex-col">
-                <div class="box-border">
-                    <div class="block h-auto opacity-1 overflow-visible">
-                        <div class="max-w-full">
-                            <div class="flex flex-wrap mr-[-15px] ml-[-15px]">
-                                <div class="flex-0-0-41 max-w-[41.66%] mt-0">
-                                    <div class="box-border">
-                                        <div class="relative block box-border overflow-hidden m-0 p-0">
-                                            <div class="opacity-1 w-[333px] float-left h-auto p-2">
-                                                <div class=" pb-[30px] relative overflow-hidden">
-                                                    <div class="mt-2 mx-2 absolute  z-[9]">
-                                                        <span
-                                                            class="p-[8px] bg-[#ffb463] rounded-[3px] text-white text-xs leading-none">ARTAŞ</span>
-                                                    </div>
-                                                    <a href="#" class="text-[#454545]">
-                                                        <img src="img/ürün.jpg"
-                                                            class="w-full transition-all duration-[1500] ease-custom-ease">
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                <div class="pb-[30px] box-border">
+                    <div class="mt-[-30px] flex-col justify-between mb-[30px] py-px px-5">
+
+                        <form action="" class="">
+                            <div class=" ml-5 justify-between mt-5 flex ">
+
+                                <div class="box-border">
+
+                                    <h2 class="text-2xl ">Ürünlerimiz</h2>
                                 </div>
-                                <div class="border border-gray-200 bg-custom-gradient flex-0-0-58 max-w-[58.33%] p-2.5">
-                                    <form class="box-border mt-0">
-                                        <div class="box-border">
-                                            <span class="box-border text-[#454545] mb-2.5">
-                                                <br><br>
-                                                Stok Kodu: 054 25100
-                                            </span>
-                                            <div class="block overflow-hidden space-y-4">
-                                                <title>Kablo Bağı 2,5x100 Beyaz ARTAŞ -</title>
-                                                <span class="text-[#242424] text-sm">
-                                                    <h3 class="text-[#c6171a] m-0 p-0 text-[28px] mb-[70px]">Kablo Bağı
-                                                        2,5x100 Beyaz</h3>
+                                <div class="flex">
+                                    <label
+                                        class="text-[#242424] text-[15px] font-normal my-0 mr-[11px] ml-0 cursor-pointer">Markalar
+                                        : </label>
+                                    <select name="marka" id=""
+                                        class="bg-white border-px rounded-[3px] shadow-none text-[#898888] cursor-pointer text-sm h-[30px] pl-2.5 w-[180px]">
+                                        <option value="HEPSİ"
+                                            class="bg-white pl-2.5 text-sm border-0 border-solid border-[#626262]">HEPSİ
+                                        </option>
+                                        <option value="HEPSİ"
+                                            class="bg-white pl-2.5 text-sm border-0 border-solid border-[#626262]">3V
+                                        </option>
+                                        <option value="HEPSİ"
+                                            class="bg-white pl-2.5 text-sm border-0 border-solid border-[#626262]">
+                                            AKDENİZ
+                                        </option>
+                                        <option value="HEPSİ"
+                                            class="bg-white pl-2.5 text-sm border-0 border-solid border-[#626262]">
+                                            AKFİKS
+                                        </option>
+                                        <option value="HEPSİ"
+                                            class="bg-white pl-2.5 text-sm border-0 border-solid border-[#626262]">ANAS
+                                        </option>
+                                        <option value="HEPSİ"
+                                            class="bg-white pl-2.5 text-sm border-0 border-solid border-[#626262]">ASEL
+                                        </option>
+                                        <option value="HEPSİ"
+                                            class="bg-white pl-2.5 text-sm border-0 border-solid border-[#626262]">ATLAS
+                                        </option>
+                                        <option value="HEPSİ"
+                                            class="bg-white pl-2.5 text-sm border-0 border-solid border-[#626262]">
+                                            BAUTECH
+                                        </option>
+                                        <option value="HEPSİ"
+                                            class="bg-white pl-2.5 text-sm border-0 border-solid border-[#626262]">BOSCH
+                                        </option>
+                                        <option value="HEPSİ"
+                                            class="bg-white pl-2.5 text-sm border-0 border-solid border-[#626262]">
+                                            B-TECH
+                                        </option>
+                                        <option value="HEPSİ"
+                                            class="bg-white pl-2.5 text-sm border-0 border-solid border-[#626262]">
+                                            CANDAN
+                                        </option>
+                                        <option value="HEPSİ"
+                                            class="bg-white pl-2.5 text-sm border-0 border-solid border-[#626262]">
+                                            ÇELİKSON
+                                        </option>
+                                        <option value="HEPSİ"
+                                            class="bg-white pl-2.5 text-sm border-0 border-solid border-[#626262]">
+                                            DAYSON
+                                        </option>
+                                        <option value="HEPSİ"
+                                            class="bg-white pl-2.5 text-sm border-0 border-solid border-[#626262]">DEKOR
+                                        </option>
+                                        <option value="HEPSİ"
+                                            class="bg-white pl-2.5 text-sm border-0 border-solid border-[#626262]">DOĞUŞ
+                                        </option>
+                                        <option value="HEPSİ"
+                                            class="bg-white pl-2.5 text-sm border-0 border-solid border-[#626262]">
+                                            EKONET
+                                        </option>
+                                        <option value="HEPSİ"
+                                            class="bg-white pl-2.5 text-sm border-0 border-solid border-[#626262]">ELTA
+                                        </option>
+                                        <option value="HEPSİ"
+                                            class="bg-white pl-2.5 text-sm border-0 border-solid border-[#626262]">FAR
+                                        </option>
+                                        <option value="HEPSİ"
+                                            class="bg-white pl-2.5 text-sm border-0 border-solid border-[#626262]">FERM
+                                        </option>
+                                        <option value="HEPSİ"
+                                            class="bg-white pl-2.5 text-sm border-0 border-solid border-[#626262]">
+                                            FIVESTAR
+                                        </option>
+                                        <option value="HEPSİ"
+                                            class="bg-white pl-2.5 text-sm border-0 border-solid border-[#626262]">KALE
+                                        </option>
+                                        <option value="HEPSİ"
+                                            class="bg-white pl-2.5 text-sm border-0 border-solid border-[#626262]">
+                                            GÜVENİŞ
+                                        </option>
+                                        <option value="HEPSİ"
+                                            class="bg-white pl-2.5 text-sm border-0 border-solid border-[#626262]">
+                                            HENKEL
+                                        </option>
 
-                                                </span>
-                                                <div
-                                                    class="mx-2 mt-10 mb-5 transition-all duration-300 ease-custom-ease">
-                                                    <div class="bg-[#FAFAFA] pl-2.5 border border-[#ededed]">
-                                                        <p class="mb-4"></p>
-                                                        <div class="w-[100px] float-left">Fiyat</div>
-                                                        <div class="w-2.5 float-left">:</div>
-                                                        <div class="float-left">0,45 €</div>
-                                                        <p class="mb-4"></p>
-                                                        <div class="clear-both"></div>
-                                                        <p class="mb-4"></p>
-                                                        <div class="w-[100px] float-left">Euro Kur</div>
-                                                        <div class="w-2.5 float-left">:</div>
-                                                        <div class="float-left">36,64 TL</div>
-                                                        <p class="mb-4"></p>
-                                                        <div class="clear-both"></div>
-                                                        <p class="mb-4"></p>
-                                                        <div class="w-[100px] float-left">TL Karşılığı</div>
-                                                        <div class="w-2.5 float-left">:</div>
-                                                        <div class="float-left">16,49 TL</div>
-                                                        <p class="mb-4"></p>
-                                                        <div class="clear-both"></div>
-                                                        <p class="mb-4"></p>
-                                                        <div class="w-[100px] float-left">KDV Oran</div>
-                                                        <div class="w-2.5 float-left">:</div>
-                                                        <div class="float-left">20</div>
-                                                        <p class="mb-4"></p>
-                                                        <div class="clear-both"></div>
-                                                        <p class="mb-4"></p>
-                                                        <div class="w-[180px] float-left">KDV Dahil Toplam Fiyat</div>
-                                                        <div class="w-2.5 float-left">:</div>
-                                                        <div class="float-left">19,79 TL</div>
-                                                        <p class="mb-4"></p>
-                                                        <div class="clear-both"></div>
-                                                        <p class="mb-4"></p>
-                                                    </div>
-
-                                                    <div class="flex flex-wrap justify-between mt-5 mr-10 box-border">
-                                                        <div class="flex items-center ml-0">
-                                                            <input type="number" value="1" min="1" max="100"
-                                                                class="text-left text-black bg-[#eef0f1] border-none rounded-[3px] pt-[5px] pr-[5px] pl-[5px] pb-[5px] uppercase">
-                                                        </div>
-                                                        <a type="submit"
-                                                            class="mb-2   text-black bg-[#eef0f1] border-none rounded-[3px] pt-[5px] pr-[5px] pl-[5px] pb-[5px] uppercase">
-                                                            <img src="img/shopping-cart2.svg"
-                                                                class="inline-block text-sm font-normal">
-                                                            Sepete Ekle
-                                                        </a>
-                                                        <a type="submit"
-                                                            class="mb-2  text-black bg-[#eef0f1] border-none rounded-[3px] pt-[5px] pr-[5px] pl-[5px] pb-[5px] uppercase">
-                                                            <img src="img/check.svg"
-                                                                class="inline-block text-sm font-normal">
-                                                            Satın Al
-                                                        </a>
-                                                    </div>
-
-
-
-                                                    <div class="text-center mb-[30px] mt-[27px] mr-0">
-                                                        <ul class="m-0 p-0">
-                                                            <li
-                                                                class="inline-block p-2 rounded-2 mt-0 b-0 ml-0 mr-[6px] border border-transparent">
-                                                                <a href="#" class="bg-[#00aaf0] text-white  p-1 rounded-2 flex">
-                                                                    <img src="img/twitter.svg" class=""> Tweet
-                                                                </a>
-                                                            </li>
-                                                            <li
-                                                                class="inline-block  p-2 rounded-2 mt-0 b-0 ml-0 mr-[6px] border border-transparent">
-                                                                <a href="#" class="bg-[#435f9f] text-white  p-1 rounded-2 flex">
-                                                                    <img src="img/facebook.svg" fill="#ffffff"> Facebook
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </form>
+                                    </select>
                                 </div>
                             </div>
-                        </div>
-                        <div class="mt-10 box-border block">
-                            <div class="max-w-[1200px]">
-                                <div class="box-border order border-[#e6e6e6]">
-                                    <div class="justify-center flex text-center">
-                                        <a href="" class="text-[#242424] inline-block text-[20px] font-medium mt-0 mr-[35px] pb-2.5">
-                                            <i class=" flex text-xl"><img src="img/file-text.svg"  class="">Ürün Açıklaması</i>
-                                        </a>
-                                    </div>
-                                    <div class="bg-white rounded-[5px] h-20 pt-[50px] pr-0 pb-5 border-t border-[#ebebeb] ">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
+
+               
+
+                <div class="flex-col justify-between pt-[15px] pl-6 pb-[13px] box-border">
+                    <div class="flex justify-between w-full">
+                        <ul class="m-0 p-0 flex-1">
+                            <li class="inline-block mt-2 mx-px mb-0">
+                                <a href="#"
+                                    class="text-[#454545] bg-[#f1f1f1] rounded-[3px] block text-center w-8 h-8 items-center justify-center border-none border-[#d4d4d4] hover:bg-[#44526c] hover:text-white">1</a>
+                            </li>
+
+                            <li class="inline-block mt-2 mx-px mb-0">
+                                <a href="{{ url('/page2') }}"
+                                    class="text-[#454545] bg-[#f1f1f1] rounded-[3px] block text-center w-8 h-8 items-center justify-center border-none border-[#d4d4d4] hover:bg-[#44526c] hover:text-white">2</a>
+                            </li>
+
+                            <li class="inline-block mt-2 mx-px mb-0">
+                                <a href="{{ url('/page3') }}"
+                                    class="text-[#454545] bg-[#f1f1f1] rounded-[3px] block text-center w-8 h-8 items-center justify-center border-none border-[#d4d4d4] hover:bg-[#44526c] hover:text-white">3</a>
+                            </li>
+
+                            <li class="inline-block mt-2 mx-px mb-0">
+                                <a href="#"
+                                    class="text-[#454545] bg-[#f1f1f1] rounded-[3px] block text-center w-8 h-8 items-center justify-center border-none border-[#d4d4d4] hover:bg-[#44526c] hover:text-white">4</a>
+                            </li>
+                            <li class="inline-block mt-2 mx-px mb-0">
+                                <a href="#"
+                                    class="text-[#454545] bg-[#f1f1f1] rounded-[3px] block text-center w-8 h-8 items-center justify-center border-none border-[#d4d4d4] hover:bg-[#44526c] hover:text-white">5</a>
+                            </li>
+
+                            <li class="inline-block mt-2 mx-px mb-0">
+                                <a href="#"
+                                    class="text-[#454545] bg-[#f1f1f1] rounded-[3px] block text-center w-8 h-8 items-center justify-center border-none border-[#d4d4d4] hover:bg-[#44526c] hover:text-white">6</a>
+                            </li>
+
+                            <li class="inline-block mt-2 mx-px mb-0">
+                                <a href="#"
+                                    class="text-[#454545] bg-[#f1f1f1] rounded-[3px] block text-center w-8 h-8 items-center justify-center border-none border-[#d4d4d4] hover:bg-[#44526c] hover:text-white">7</a>
+                            </li>
+
+                            <li class="inline-block mt-2 mx-px mb-0">
+                                <a href="#"
+                                    class="text-[#454545] bg-[#f1f1f1] rounded-[3px] block text-center w-8 h-8 items-center justify-center border-none border-[#d4d4d4] hover:bg-[#44526c] hover:text-white">8</a>
+                            </li>
+                            <li class="inline-block mt-2 mx-px mb-0">
+                                <a href="#"
+                                    class="text-[#454545] bg-[#f1f1f1] rounded-[3px] block text-center w-8 h-8 items-center justify-center border-none border-[#d4d4d4] hover:bg-[#44526c] hover:text-white">9</a>
+                            </li>
+
+                            <li class="inline-block mt-2 mx-px mb-0">
+                                <a href="#"
+                                    class="text-[#454545] bg-[#f1f1f1] rounded-[3px] block text-center w-8 h-8 items-center justify-center border-none border-[#d4d4d4] hover:bg-[#44526c] hover:text-white">10</a>
+                            </li>
+                            <li class="inline-block mt-2 mx-px mb-0">
+                                <a href="#"
+                                    class="text-[#454545] bg-[#f1f1f1] rounded-[3px] block text-center w-8 h-8 items-center justify-center border-none border-[#d4d4d4] hover:bg-[#44526c] hover:text-white">1</a>
+                            </li>
+
+                            <li class="inline-block mt-2 mx-px mb-0">
+                                <a href="#"
+                                    class="text-[#454545] bg-[#f1f1f1] rounded-[3px] flex text-center w-12 h-8 items-center justify-center border-none border-[#d4d4d4] hover:bg-[#44526c] hover:text-white">İleri
+                                    <img src="img/chevron-right.svg" class=""></a>
+                            </li>
+                            <li class="inline-block mt-2 mx-px mb-0">
+                                <a href="#"
+                                    class="text-[#454545] bg-[#f1f1f1] rounded-[3px] flex text-center w-12 h-8 items-center justify-center border-none border-[#d4d4d4] hover:bg-[#44526c] hover:text-white">Son
+                                    <img src="img/chevron-right.svg" class=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <span class="mt-2 mx-px mb-0">Toplam 160 Sayfa</span>
+                </div>
+
             </div>
 
 
@@ -556,7 +601,7 @@
 
     <!--FOOTER-->
 
-  
+   
     <footer
         class="box-border relative z-20  bg-footerbg pt-[60px] bg-cover bg-center w-full h-auto border-t-[10px] border-t-white ">
         <div class="max-w-[1200px] w-full mx-auto">
@@ -769,7 +814,6 @@
         </div>
 
     </footer>
-
 
     <script src="{{ asset('js/animates.js') }}"></script>
 

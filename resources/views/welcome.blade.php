@@ -6,18 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     @vite('resources/css/app.css')
 
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
     <title>Ender Yapı - Yapı Malzemeleri</title>
 </head>
 
-<body class="overflow-x-hidden">
+<body class="overflow-x-hidden ">
+
     <!--HEADER SECTION-->
     <section>
-        <header class="2xl:pb-15 2xl:float-left block box-border bg-bg-header h-[258px] w-full">
-            <div class="border-b border-[#3d3d3f] pb-[13px] pt-2.5">
+        <header
+            class="2xl:pb-15 2xl:float-left xl:pb-15 xl:float-left xl:block block box-border bg-bg-header h-[258px] w-full">
+            <div class="border-b border-[#3d3d3f] pb-[13px] pt-2.5 lg:mx-2 lg:p-2 ">
                 <div class="max-w-[1200px] mx-auto">
                     <div class="h-[30px] flex -mx-[15px]">
-                        <div class="flex-1"></div>
-                        <div class="flex-1 flex justify-end">
+                        <div class="flex-1 flex justify-end ">
                             <div class="bg-white-10 shadow-none border-0 rounded-[5px] mr-[42px] h-[35px] relative">
                                 <a href="#"
                                     class="text-white flex mb-0 font-normal text-center align-middle cursor-pointer py-[6px] px-3 text-sm leading-[1.42] rounded-[4px] hover:text-white hover:border hover:border-white hover:bg-white hover:bg-opacity-30">
@@ -32,7 +37,7 @@
                     </div>
                 </div>
             </div>
-            <div class="px-0 py-10 box-border ">
+            <div class="px-0 py-10 box-border lg:mx-2">
                 <div class="px-[15px] mx-auto max-w-[1200px]">
                     <div class="flex flex-wrap -mx-[15px] ">
                         <div class="flex-0-0-25 max-w-[25%]">
@@ -88,22 +93,19 @@
                 </div>
             </div>
 
-            <div class="bg-headershape bg-no-repeat text-white w-full relative ">
-                <div class="max-w-[1200px]  bg-top mx-auto">
-                    <div class=" justify-between box-border ">
+            <div class="bg-headershape bg-no-repeat text-white w-full relative">
+                <div class="max-w-[1200px] bg-top mx-auto">
+                    <div class="justify-between box-border">
                         <nav class="inline-block">
                             <ul class="text-left flex justify-between space-x-[49px]">
-                                <li class="inline-block relative whitespace-nowrap text-white group">
+                            <li class="inline-block relative whitespace-nowrap text-white group">
                                     <a href="#"
-                                        class="text-white inline-block font-normal leading-[55px] uppercase transition-all duration-500 ease-in-out transform group-hover:translate-y-[55px] group-hover:opacity-0">
+                                        class="text-white inline-block font-normal leading-[55px] uppercase transition-all duration-500 ease-in-out transform group-hover:translate-y-[55px] group-hover:opacity-0 delay-75">
                                         ANA SAYFA
                                     </a>
-
                                     <span
-                                        class="absolute top-0 left-0 w-full h-full flex items-center justify-center opacity-0 transition-opacity duration-500 ease-in-out transform -translate-y-[55px] group-hover:translate-y-0 group-hover:opacity-100">
-                                        <a href="#"
-                                            class="relative text-white border-b-2 border-red-500">
-
+                                        class="absolute top-0 left-0 w-full h-full flex items-center justify-center opacity-0 transition-opacity duration-500 ease-in-out transform translate-y-[20px] group-hover:translate-y-0 group-hover:opacity-100 delay-100">
+                                        <a href="#" class="relative text-white border-b-2 border-red-500">
                                             ANA SAYFA
                                         </a>
                                     </span>
@@ -114,7 +116,7 @@
                                         KURUMSAL
                                     </a>
                                     <span
-                                        class="absolute top-0 left-0 w-full h-full flex items-center justify-center opacity-0 transition-opacity duration-500 ease-in-out transform -translate-y-[55px] group-hover:translate-y-0 group-hover:opacity-100">
+                                        class="absolute top-0 left-0 w-full h-full flex items-center justify-center opacity-0 transition-opacity duration-500 ease-in-out transform translate-y-[20px] group-hover:translate-y-0 group-hover:opacity-100">
                                         <a href="{{ url('/kurumsal') }}"
                                             class="relative text-white border-b-2 border-red-500">
 
@@ -128,7 +130,7 @@
                                         E-MAĞAZA
                                     </a>
                                     <span
-                                        class="absolute top-0 left-0 w-full h-full flex items-center justify-center opacity-0 transition-opacity duration-500 ease-in-out transform -translate-y-[55px] group-hover:translate-y-0 group-hover:opacity-100">
+                                        class="absolute top-0 left-0 w-full h-full flex items-center justify-center opacity-0 transition-opacity duration-500 ease-in-out transform translate-y-[20px] group-hover:translate-y-0 group-hover:opacity-100">
                                         <a href="{{ url('/e-magaza') }}"
                                             class="relative text-white border-b-2 border-red-500">
 
@@ -142,7 +144,7 @@
                                         KAMPANYA
                                     </a>
                                     <span
-                                        class="absolute top-0 left-0 w-full h-full flex items-center justify-center opacity-0 transition-opacity duration-500 ease-in-out transform -translate-y-[55px] group-hover:translate-y-0 group-hover:opacity-100">
+                                        class="absolute top-0 left-0 w-full h-full flex items-center justify-center opacity-0 transition-opacity duration-500 ease-in-out transform translate-y-[20px] group-hover:translate-y-0 group-hover:opacity-100">
                                         <a href="{{ url('/kampanya') }}"
                                             class="relative text-white border-b-2 border-red-500">
 
@@ -156,7 +158,7 @@
                                         E-KATALOG
                                     </a>
                                     <span
-                                        class="absolute top-0 left-0 w-full h-full flex items-center justify-center opacity-0 transition-opacity duration-500 ease-in-out transform -translate-y-[55px] group-hover:translate-y-0 group-hover:opacity-100">
+                                        class="absolute top-0 left-0 w-full h-full flex items-center justify-center opacity-0 transition-opacity duration-500 ease-in-out transform translate-y-[20px] group-hover:translate-y-0 group-hover:opacity-100">
                                         <a href="{{ url('/e-katalog') }}"
                                             class="relative text-white border-b-2 border-red-500">
 
@@ -170,7 +172,7 @@
                                         İLETİŞİM
                                     </a>
                                     <span
-                                        class="absolute top-0 left-0 w-full h-full flex items-center justify-center opacity-0 transition-opacity duration-500 ease-in-out transform -translate-y-[55px] group-hover:translate-y-0 group-hover:opacity-100">
+                                        class="absolute top-0 left-0 w-full h-full flex items-center justify-center opacity-0 transition-opacity duration-500 ease-in-out transform translate-y-[20px] group-hover:translate-y-0 group-hover:opacity-100">
                                         <a href="{{ url('/contact') }}"
                                             class="relative text-white border-b-2 border-red-500">
 
@@ -200,11 +202,15 @@
                                 ve Dağıtım Ağı İle Türkiye Çapında Güvenilir Yapı Malzemeleri Tedariğinde Lider</p>
                             <div class="relative z-[99]">
                                 <div
-                                    class="absolute left-1/2 transform top-[5px] -translate-x-1/2 border-t-[70px] border-l-[120px] border-r-[120px] border-l-transparent border-r-transparent border-t-[#fff] border-solid">
+                                    class="absolute left-1/2 transform top-0 -translate-x-1/2 border-t-[70px] border-l-[120px] border-r-[120px] border-l-transparent border-r-transparent border-t-[#fff] border-solid">
                                 </div>
                                 <img src="img/logo3.png" alt=""
-                                    class="absolute left-1/2 mt-5 transform -translate-x-1/2 top-[75%]">
+                                    class="absolute left-1/2 transform -translate-x-1/2 top-[60%] translate-y-4">
                             </div>
+
+
+
+
                         </div>
                     </div>
 
@@ -214,40 +220,71 @@
         <!--SLIDER SECTION-->
 
 
-        <div class="box-border overflow-x-hidden mb-2.5">
-            <div class="w-full block z-[0] relative"> <!-- z-index 0 -->
-                <div class="relative box-border block">
-                    <div class="transform-custom transition-all-custom w-custom">
-                        <div class="w-[2136px] float-left backface-hidden touch-callout-none">
-                            <div class="min-h-[515px] bg-center bg-cover pb-40 bg-slider1 relative">
-                                <div class="top-0 absolute w-full h-full z-[10] bg-pattern"></div> <!-- z-index 10 -->
-                            </div>
+        <div class="w-full relative">
+            <div class="swiper default-carousel swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="rounded-2xl h-[515px] flex justify-center items-center overflow-hidden">
+                            <img src="img/slider-28.jpg" alt="Slide 1" class="object-cover w-full h-full">
+                            <div class="top-0 absolute w-full h-full z-[10] bg-pattern"></div>
+
+
                         </div>
-                        <div class="w-[2136px] float-left">
-                            <div class="min-h-[515px] bg-cover bg-center pb-40 bg-slider2 relative">
-                                <div class="top-0 absolute w-full h-full z-[10] bg-pattern"></div> <!-- z-index 10 -->
-                            </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="rounded-2xl h-[515px] flex justify-center items-center overflow-hidden">
+                            <img src="img/slider-29.jpg" alt="Slide 2" class="object-cover w-full h-full">
+                            <div class="top-0 absolute w-full h-full z-[10] bg-pattern"></div>
+
                         </div>
-                        <div class="w-[2136px] float-left">
-                            <div class="min-h-[515px] bg-cover bg-center pb-40 bg-slider3 relative">
-                                <div class="top-0 absolute w-full h-full z-[10] bg-pattern"></div> <!-- z-index 10 -->
-                            </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="rounded-2xl h-[515px] flex justify-center items-center overflow-hidden">
+                            <img src="img/slider-27.jpg" alt="Slide 3" class="object-cover w-full h-full">
+                            <div class="top-0 absolute w-full h-full z-[10] bg-pattern"></div>
+
                         </div>
                     </div>
                 </div>
+
+                <div class="swiper-pagination"></div>
             </div>
         </div>
 
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                loop: true,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                slidesPerView: 1,
+                spaceBetween: 30,
+                grabCursor: true,
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+            });
+        </script>
+
+
 
 
         </div>
 
-        <div class="relative z-[99]  ">
+        <div class="relative z-[99]">
             <div
-                class="absolute left-1/2 transform bottom-[5px] -translate-x-1/2 border-b-[70px] border-l-[120px] border-r-[120px] border-l-transparent border-r-transparent border-b-[#fff] border-solid">
+                class="absolute left-1/2 transform bottom-0 -translate-x-1/2 border-b-[70px] border-l-[120px] border-r-[120px] border-l-transparent border-r-transparent border-b-[#fff] border-solid">
             </div>
-            <img src="img/logo3.png" alt="" class="absolute left-1/2 mt-0 mb-5 transform -translate-x-1/2 bottom-[85%]">
+            <img src="img/logo3.png" alt="" class="absolute left-1/2 mt-0 mb-5 transform -translate-x-1/2 bottom-[84%]">
         </div>
+
 
         <div class=" mx-auto relative">
             <div class="max-w-[1200px] mx-auto relative ">
@@ -309,228 +346,455 @@
     <div class="bg-[#ededed] block w-full z-[1] relative">
 
         <div class="bg-[#ededed] relative overflow-hidden box-border">
-            <div id="carousel" class="transition-all w-[14734px] relative box-border mt-10">
-                <div>
-                    <div class="w-[698.667px] mr-4 float-left min-h-[1px]">
-                        <div class="mr-0 min-h-[1px] float-left">
-                            <div class="bg-white mt-[15px] box-border relative z-[10]">
-                                <div class="rounded-[3px] flex mb-[50px]">
-                                    <div class="p-2.5 relative flex-0-0-180 box-border">
-                                        <div class="relative overflow-hidden box-border">
-                                            <a href="#" class="transition-all duration-300 ease-out delay-0">
-                                                <img src="img/a.jpg"
-                                                    class="block w-full transition-all duration-1500 ease-in-out delay-0 transform duration-500 hover:scale-110">
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="m-5 pt-[13px] pr-[13px] pb-[5px] pl-[10px] relative">
-                                        <span
-                                            class="text-[13px] bg-[#f9f9f9] rounded-[3px] text-[#555] leading-[1px] relative top-[-10px] z-[99] pt-1.5 pr-3.5 pb-1.25 pl-3.5">SK:
-                                            079 22250</span>
-                                        <h4 class="text-sm leading-[18px] mt-[2px] mb-[13px] mx-0 font-semibold">
-                                            <a href="#" class="text-[#242424]">
-                                                <h2 class="text-sm not-italic font-normal text-[#242424] mt-0">İthal
-                                                    Ağaç
-                                                    Delme Matkap Ucu 22x250</h2>
-                                            </a>
-                                        </h4>
-                                        <div class="block transition-all duration-300 ease-out delay-0">
-                                            <div class="relative">
-                                                <a href="#"
-                                                    class="bg-[#ffb463] text-white py-2 px-4 rounded-[3px] inline-block">
-                                                    <span>Detaylar</span>
+            <div id="carousel" class="swiper-container multiple-slide-carousel">
+
+                <div class="swiper-wrapper ">
+
+                    <div class="swiper-slide">
+                        <div class="w-[698.667px] mr-4 float-left min-h-[1px]">
+                            <div class="mr-0 min-h-[1px] float-left">
+                                <div class="bg-white mt-[15px] box-border relative z-[10]">
+                                    <div class="rounded-[3px] flex mb-[50px]">
+                                        <div class="p-2.5 relative flex-0-0-180 box-border">
+                                            <div class="relative overflow-hidden box-border">
+                                                <a href="{{ url('/detay') }}"
+                                                    class="transition-all duration-300 ease-out delay-0">
+                                                    <img src="img/a.jpg"
+                                                        class="block w-full transition-all duration-1500 ease-in-out delay-0 transform duration-500 hover:scale-110">
                                                 </a>
                                             </div>
                                         </div>
-                                        <div class="text-sm">
-                                            <span class="p-[6px] text-sm rounded-[3px] leading-[2px]">204,82 TL +20
-                                                Kdv</span>
-                                        </div>
+                                        <div class="m-5 pt-[13px] pr-[13px] pb-[5px] pl-[10px] relative">
+                                            <span
+                                                class="text-[13px] bg-[#f9f9f9] rounded-[3px] text-[#555] leading-[1px] relative top-[-10px] z-[99] pt-1.5 pr-3.5 pb-1.25 pl-3.5">SK:
+                                                079 22250</span>
+                                            <h4 class="text-sm leading-[18px] mt-[2px] mb-[13px] mx-0 font-semibold">
+                                                <a href="#" class="text-[#242424]">
+                                                    <h2 class="text-sm not-italic font-normal text-[#242424] mt-0">İthal
+                                                        Ağaç
+                                                        Delme Matkap Ucu 22x250</h2>
+                                                </a>
+                                            </h4>
+                                            <div class="block transition-all duration-300 ease-out delay-0">
+                                                <div class="relative">
+                                                    <a href="#"
+                                                        class="bg-[#ffb463] text-white py-2 px-4 rounded-[3px] inline-block">
+                                                        <span>Detaylar</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="text-sm">
+                                                <span class="p-[6px] text-sm rounded-[3px] leading-[2px]">204,82 TL +20
+                                                    Kdv</span>
+                                            </div>
 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="w-[698.667px] mr-4 float-left min-h-[1px]">
+                            <div class="mr-0 min-h-[1px] float-left">
+                                <div class="bg-white mt-[15px] box-border relative z-[10]">
+                                    <div class="rounded-[3px] flex mb-[50px]">
+                                        <div class="p-2.5 relative flex-0-0-180 box-border">
+                                            <div class="relative overflow-hidden box-border">
+                                                <a href="{{ url('/detay') }}"
+                                                    class="transition-all duration-300 ease-out delay-0">
+                                                    <img src="img/a.jpg"
+                                                        class="block w-full transition-all duration-1500 ease-in-out delay-0 transform duration-500 hover:scale-110">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="m-5 pt-[13px] pr-[13px] pb-[5px] pl-[10px] relative">
+                                            <span
+                                                class="text-[13px] bg-[#f9f9f9] rounded-[3px] text-[#555] leading-[1px] relative top-[-10px] z-[99] pt-1.5 pr-3.5 pb-1.25 pl-3.5">SK:
+                                                079 22250</span>
+                                            <h4 class="text-sm leading-[18px] mt-[2px] mb-[13px] mx-0 font-semibold">
+                                                <a href="#" class="text-[#242424]">
+                                                    <h2 class="text-sm not-italic font-normal text-[#242424] mt-0">İthal
+                                                        Ağaç
+                                                        Delme Matkap Ucu 22x250</h2>
+                                                </a>
+                                            </h4>
+                                            <div class="block transition-all duration-300 ease-out delay-0">
+                                                <div class="relative">
+                                                    <a href="#"
+                                                        class="bg-[#ffb463] text-white py-2 px-4 rounded-[3px] inline-block">
+                                                        <span>Detaylar</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="text-sm">
+                                                <span class="p-[6px] text-sm rounded-[3px] leading-[2px]">204,82 TL +20
+                                                    Kdv</span>
+                                            </div>
+
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="w-[698.667px] mr-4 float-left min-h-[1px]">
-                    <div class="mr-0 min-h-[1px] float-left">
-                        <div class="bg-white mt-[15px] box-border relative z-[10]">
-                            <div class="rounded-[3px] flex mb-[50px]">
-                                <div class="p-2.5 relative flex-0-0-180 box-border">
-                                    <div class="relative overflow-hidden box-border">
-                                        <a href="#" class="transition-all duration-300 ease-out delay-0">
-                                            <img src="img/a.jpg"
-                                                class="block w-full transition-all duration-1500 ease-in-out delay-0 transform duration-500 hover:scale-110">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="m-5 pt-[13px] pr-[13px] pb-[5px] pl-[10px] relative">
-                                    <span
-                                        class="text-[13px] bg-[#f9f9f9] rounded-[3px] text-[#555] leading-[1px] relative top-[-10px] z-[99] pt-1.5 pr-3.5 pb-1.25 pl-3.5">SK:
-                                        079 22250</span>
-                                    <h4 class="text-sm leading-[18px] mt-[2px] mb-[13px] mx-0 font-semibold">
-                                        <a href="#" class="text-[#242424]">
-                                            <h2 class="text-sm not-italic font-normal text-[#242424] mt-0">İthal Ağaç
-                                                Delme Matkap Ucu 22x250</h2>
-                                        </a>
-                                    </h4>
-                                    <div class="block transition-all duration-300 ease-out delay-0">
-                                        <div class="relative">
-                                            <a href="#"
-                                                class="bg-[#ffb463] text-white py-2 px-4 rounded-[3px] inline-block">
-                                                <span>Detaylar</span>
-                                            </a>
+                    <div class="swiper-slide">
+                        <div class="w-[698.667px] mr-4 float-left min-h-[1px]">
+                            <div class="mr-0 min-h-[1px] float-left">
+                                <div class="bg-white mt-[15px] box-border relative z-[10]">
+                                    <div class="rounded-[3px] flex mb-[50px]">
+                                        <div class="p-2.5 relative flex-0-0-180 box-border">
+                                            <div class="relative overflow-hidden box-border">
+                                                <a href="{{ url('/detay') }}"
+                                                    class="transition-all duration-300 ease-out delay-0">
+                                                    <img src="img/a.jpg"
+                                                        class="block w-full transition-all duration-1500 ease-in-out delay-0 transform duration-500 hover:scale-110">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="m-5 pt-[13px] pr-[13px] pb-[5px] pl-[10px] relative">
+                                            <span
+                                                class="text-[13px] bg-[#f9f9f9] rounded-[3px] text-[#555] leading-[1px] relative top-[-10px] z-[99] pt-1.5 pr-3.5 pb-1.25 pl-3.5">SK:
+                                                079 22250</span>
+                                            <h4 class="text-sm leading-[18px] mt-[2px] mb-[13px] mx-0 font-semibold">
+                                                <a href="#" class="text-[#242424]">
+                                                    <h2 class="text-sm not-italic font-normal text-[#242424] mt-0">İthal
+                                                        Ağaç
+                                                        Delme Matkap Ucu 22x250</h2>
+                                                </a>
+                                            </h4>
+                                            <div class="block transition-all duration-300 ease-out delay-0">
+                                                <div class="relative">
+                                                    <a href="#"
+                                                        class="bg-[#ffb463] text-white py-2 px-4 rounded-[3px] inline-block">
+                                                        <span>Detaylar</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="text-sm">
+                                                <span class="p-[6px] text-sm rounded-[3px] leading-[2px]">204,82 TL +20
+                                                    Kdv</span>
+                                            </div>
+
                                         </div>
                                     </div>
-                                    <div class="text-sm">
-                                        <span class="p-[6px] text-sm rounded-[3px] leading-[2px]">204,82 TL +20
-                                            Kdv</span>
-                                    </div>
-
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="w-[698.667px] mr-4 float-left min-h-[1px]">
-                    <div class="mr-0 min-h-[1px] float-left">
-                        <div class="bg-white mt-[15px] box-border relative z-[10]">
-                            <div class="rounded-[3px] flex mb-[50px]">
-                                <div class="p-2.5 relative flex-0-0-180 box-border">
-                                    <div class="relative overflow-hidden box-border">
-                                        <a href="#" class="transition-all duration-300 ease-out delay-0">
-                                            <img src="img/a.jpg"
-                                                class="block w-full transition-all duration-1500 ease-in-out delay-0 transform duration-500 hover:scale-110">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="m-5 pt-[13px] pr-[13px] pb-[5px] pl-[10px] relative">
-                                    <span
-                                        class="text-[13px] bg-[#f9f9f9] rounded-[3px] text-[#555] leading-[1px] relative top-[-10px] z-[99] pt-1.5 pr-3.5 pb-1.25 pl-3.5">SK:
-                                        079 22250</span>
-                                    <h4 class="text-sm leading-[18px] mt-[2px] mb-[13px] mx-0 font-semibold">
-                                        <a href="#" class="text-[#242424]">
-                                            <h2 class="text-sm not-italic font-normal text-[#242424] mt-0">İthal Ağaç
-                                                Delme Matkap Ucu 22x250</h2>
-                                        </a>
-                                    </h4>
-                                    <div class="block transition-all duration-300 ease-out delay-0">
-                                        <div class="relative">
-                                            <a href="#"
-                                                class="bg-[#ffb463] text-white py-2 px-4 rounded-[3px] inline-block">
-                                                <span>Detaylar</span>
-                                            </a>
+
+                    <div class="swiper-slide">
+                        <div class="w-[698.667px] mr-4 float-left min-h-[1px]">
+                            <div class="mr-0 min-h-[1px] float-left">
+                                <div class="bg-white mt-[15px] box-border relative z-[10]">
+                                    <div class="rounded-[3px] flex mb-[50px]">
+                                        <div class="p-2.5 relative flex-0-0-180 box-border">
+                                            <div class="relative overflow-hidden box-border">
+                                                <a href="{{ url('/detay') }}"
+                                                    class="transition-all duration-300 ease-out delay-0">
+                                                    <img src="img/a.jpg"
+                                                        class="block w-full transition-all duration-1500 ease-in-out delay-0 transform duration-500 hover:scale-110">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="m-5 pt-[13px] pr-[13px] pb-[5px] pl-[10px] relative">
+                                            <span
+                                                class="text-[13px] bg-[#f9f9f9] rounded-[3px] text-[#555] leading-[1px] relative top-[-10px] z-[99] pt-1.5 pr-3.5 pb-1.25 pl-3.5">SK:
+                                                079 22250</span>
+                                            <h4 class="text-sm leading-[18px] mt-[2px] mb-[13px] mx-0 font-semibold">
+                                                <a href="#" class="text-[#242424]">
+                                                    <h2 class="text-sm not-italic font-normal text-[#242424] mt-0">İthal
+                                                        Ağaç
+                                                        Delme Matkap Ucu 22x250</h2>
+                                                </a>
+                                            </h4>
+                                            <div class="block transition-all duration-300 ease-out delay-0">
+                                                <div class="relative">
+                                                    <a href="#"
+                                                        class="bg-[#ffb463] text-white py-2 px-4 rounded-[3px] inline-block">
+                                                        <span>Detaylar</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="text-sm">
+                                                <span class="p-[6px] text-sm rounded-[3px] leading-[2px]">204,82 TL +20
+                                                    Kdv</span>
+                                            </div>
+
                                         </div>
                                     </div>
-                                    <div class="text-sm">
-                                        <span class="p-[6px] text-sm rounded-[3px] leading-[2px]">204,82 TL +20
-                                            Kdv</span>
-                                    </div>
-
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="w-[698.667px] mr-4 float-left min-h-[1px]">
-                    <div class="mr-0 min-h-[1px] float-left">
-                        <div class="bg-white mt-[15px] box-border relative z-[10]">
-                            <div class="rounded-[3px] flex mb-[50px]">
-                                <div class="p-2.5 relative flex-0-0-180 box-border">
-                                    <div class="relative overflow-hidden box-border">
-                                        <a href="#" class="transition-all duration-300 ease-out delay-0">
-                                            <img src="img/a.jpg"
-                                                class="block w-full transition-all duration-1500 ease-in-out delay-0 transform duration-500 hover:scale-110">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="m-5 pt-[13px] pr-[13px] pb-[5px] pl-[10px] relative">
-                                    <span
-                                        class="text-[13px] bg-[#f9f9f9] rounded-[3px] text-[#555] leading-[1px] relative top-[-10px] z-[99] pt-1.5 pr-3.5 pb-1.25 pl-3.5">SK:
-                                        079 22250</span>
-                                    <h4 class="text-sm leading-[18px] mt-[2px] mb-[13px] mx-0 font-semibold">
-                                        <a href="#" class="text-[#242424]">
-                                            <h2 class="text-sm not-italic font-normal text-[#242424] mt-0">İthal Ağaç
-                                                Delme Matkap Ucu 22x250</h2>
-                                        </a>
-                                    </h4>
-                                    <div class="block transition-all duration-300 ease-out delay-0">
-                                        <div class="relative">
-                                            <a href="#"
-                                                class="bg-[#ffb463] text-white py-2 px-4 rounded-[3px] inline-block">
-                                                <span>Detaylar</span>
-                                            </a>
+
+                    <div class="swiper-slide">
+                        <div class="w-[698.667px] mr-4 float-left min-h-[1px]">
+                            <div class="mr-0 min-h-[1px] float-left">
+                                <div class="bg-white mt-[15px] box-border relative z-[10]">
+                                    <div class="rounded-[3px] flex mb-[50px]">
+                                        <div class="p-2.5 relative flex-0-0-180 box-border">
+                                            <div class="relative overflow-hidden box-border">
+                                                <a href="{{ url('/detay') }}"
+                                                    class="transition-all duration-300 ease-out delay-0">
+                                                    <img src="img/a.jpg"
+                                                        class="block w-full transition-all duration-1500 ease-in-out delay-0 transform duration-500 hover:scale-110">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="m-5 pt-[13px] pr-[13px] pb-[5px] pl-[10px] relative">
+                                            <span
+                                                class="text-[13px] bg-[#f9f9f9] rounded-[3px] text-[#555] leading-[1px] relative top-[-10px] z-[99] pt-1.5 pr-3.5 pb-1.25 pl-3.5">SK:
+                                                079 22250</span>
+                                            <h4 class="text-sm leading-[18px] mt-[2px] mb-[13px] mx-0 font-semibold">
+                                                <a href="#" class="text-[#242424]">
+                                                    <h2 class="text-sm not-italic font-normal text-[#242424] mt-0">İthal
+                                                        Ağaç
+                                                        Delme Matkap Ucu 22x250</h2>
+                                                </a>
+                                            </h4>
+                                            <div class="block transition-all duration-300 ease-out delay-0">
+                                                <div class="relative">
+                                                    <a href="#"
+                                                        class="bg-[#ffb463] text-white py-2 px-4 rounded-[3px] inline-block">
+                                                        <span>Detaylar</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="text-sm">
+                                                <span class="p-[6px] text-sm rounded-[3px] leading-[2px]">204,82 TL +20
+                                                    Kdv</span>
+                                            </div>
+
                                         </div>
                                     </div>
-                                    <div class="text-sm">
-                                        <span class="p-[6px] text-sm rounded-[3px] leading-[2px]">204,82 TL +20
-                                            Kdv</span>
-                                    </div>
-
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="w-[698.667px] mr-4 float-left min-h-[1px]">
-                    <div class="mr-0 min-h-[1px] float-left">
-                        <div class="bg-white mt-[15px] box-border relative z-[10]">
-                            <div class="rounded-[3px] flex mb-[50px]">
-                                <div class="p-2.5 relative flex-0-0-180 box-border">
-                                    <div class="relative overflow-hidden box-border">
-                                        <a href="#" class="transition-all duration-300 ease-out delay-0">
-                                            <img src="img/a.jpg"
-                                                class="block w-full transition-all duration-1500 ease-in-out delay-0 transform duration-500 hover:scale-110">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="m-5 pt-[13px] pr-[13px] pb-[5px] pl-[10px] relative">
-                                    <span
-                                        class="text-[13px] bg-[#f9f9f9] rounded-[3px] text-[#555] leading-[1px] relative top-[-10px] z-[99] pt-1.5 pr-3.5 pb-1.25 pl-3.5">SK:
-                                        079 22250</span>
-                                    <h4 class="text-sm leading-[18px] mt-[2px] mb-[13px] mx-0 font-semibold">
-                                        <a href="#" class="text-[#242424]">
-                                            <h2 class="text-sm not-italic font-normal text-[#242424] mt-0">İthal Ağaç
-                                                Delme Matkap Ucu 22x250</h2>
-                                        </a>
-                                    </h4>
-                                    <div class="block transition-all duration-300 ease-out delay-0">
-                                        <div class="relative">
-                                            <a href="#"
-                                                class="bg-[#ffb463] text-white py-2 px-4 rounded-[3px] inline-block">
-                                                <span>Detaylar</span>
-                                            </a>
+                    <div class="swiper-slide">
+                        <div class="w-[698.667px] mr-4 float-left min-h-[1px]">
+                            <div class="mr-0 min-h-[1px] float-left">
+                                <div class="bg-white mt-[15px] box-border relative z-[10]">
+                                    <div class="rounded-[3px] flex mb-[50px]">
+                                        <div class="p-2.5 relative flex-0-0-180 box-border">
+                                            <div class="relative overflow-hidden box-border">
+                                                <a href="{{ url('/detay') }}"
+                                                    class="transition-all duration-300 ease-out delay-0">
+                                                    <img src="img/a.jpg"
+                                                        class="block w-full transition-all duration-1500 ease-in-out delay-0 transform duration-500 hover:scale-110">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="m-5 pt-[13px] pr-[13px] pb-[5px] pl-[10px] relative">
+                                            <span
+                                                class="text-[13px] bg-[#f9f9f9] rounded-[3px] text-[#555] leading-[1px] relative top-[-10px] z-[99] pt-1.5 pr-3.5 pb-1.25 pl-3.5">SK:
+                                                079 22250</span>
+                                            <h4 class="text-sm leading-[18px] mt-[2px] mb-[13px] mx-0 font-semibold">
+                                                <a href="#" class="text-[#242424]">
+                                                    <h2 class="text-sm not-italic font-normal text-[#242424] mt-0">İthal
+                                                        Ağaç
+                                                        Delme Matkap Ucu 22x250</h2>
+                                                </a>
+                                            </h4>
+                                            <div class="block transition-all duration-300 ease-out delay-0">
+                                                <div class="relative">
+                                                    <a href="#"
+                                                        class="bg-[#ffb463] text-white py-2 px-4 rounded-[3px] inline-block">
+                                                        <span>Detaylar</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="text-sm">
+                                                <span class="p-[6px] text-sm rounded-[3px] leading-[2px]">204,82 TL +20
+                                                    Kdv</span>
+                                            </div>
+
                                         </div>
                                     </div>
-                                    <div class="text-sm">
-                                        <span class="p-[6px] text-sm rounded-[3px] leading-[2px]">204,82 TL +20
-                                            Kdv</span>
-                                    </div>
-
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="swiper-slide">
+                        <div class="w-[698.667px] mr-4 float-left min-h-[1px]">
+                            <div class="mr-0 min-h-[1px] float-left">
+                                <div class="bg-white mt-[15px] box-border relative z-[10]">
+                                    <div class="rounded-[3px] flex mb-[50px]">
+                                        <div class="p-2.5 relative flex-0-0-180 box-border">
+                                            <div class="relative overflow-hidden box-border">
+                                                <a href="{{ url('/detay') }}"
+                                                    class="transition-all duration-300 ease-out delay-0">
+                                                    <img src="img/a.jpg"
+                                                        class="block w-full transition-all duration-1500 ease-in-out delay-0 transform duration-500 hover:scale-110">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="m-5 pt-[13px] pr-[13px] pb-[5px] pl-[10px] relative">
+                                            <span
+                                                class="text-[13px] bg-[#f9f9f9] rounded-[3px] text-[#555] leading-[1px] relative top-[-10px] z-[99] pt-1.5 pr-3.5 pb-1.25 pl-3.5">SK:
+                                                079 22250</span>
+                                            <h4 class="text-sm leading-[18px] mt-[2px] mb-[13px] mx-0 font-semibold">
+                                                <a href="#" class="text-[#242424]">
+                                                    <h2 class="text-sm not-italic font-normal text-[#242424] mt-0">İthal
+                                                        Ağaç
+                                                        Delme Matkap Ucu 22x250</h2>
+                                                </a>
+                                            </h4>
+                                            <div class="block transition-all duration-300 ease-out delay-0">
+                                                <div class="relative">
+                                                    <a href="#"
+                                                        class="bg-[#ffb463] text-white py-2 px-4 rounded-[3px] inline-block">
+                                                        <span>Detaylar</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="text-sm">
+                                                <span class="p-[6px] text-sm rounded-[3px] leading-[2px]">204,82 TL +20
+                                                    Kdv</span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="w-[698.667px] mr-4 float-left min-h-[1px]">
+                            <div class="mr-0 min-h-[1px] float-left">
+                                <div class="bg-white mt-[15px] box-border relative z-[10]">
+                                    <div class="rounded-[3px] flex mb-[50px]">
+                                        <div class="p-2.5 relative flex-0-0-180 box-border">
+                                            <div class="relative overflow-hidden box-border">
+                                                <a href="{{ url('/detay') }}"
+                                                    class="transition-all duration-300 ease-out delay-0">
+                                                    <img src="img/a.jpg"
+                                                        class="block w-full transition-all duration-1500 ease-in-out delay-0 transform duration-500 hover:scale-110">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="m-5 pt-[13px] pr-[13px] pb-[5px] pl-[10px] relative">
+                                            <span
+                                                class="text-[13px] bg-[#f9f9f9] rounded-[3px] text-[#555] leading-[1px] relative top-[-10px] z-[99] pt-1.5 pr-3.5 pb-1.25 pl-3.5">SK:
+                                                079 22250</span>
+                                            <h4 class="text-sm leading-[18px] mt-[2px] mb-[13px] mx-0 font-semibold">
+                                                <a href="#" class="text-[#242424]">
+                                                    <h2 class="text-sm not-italic font-normal text-[#242424] mt-0">İthal
+                                                        Ağaç
+                                                        Delme Matkap Ucu 22x250</h2>
+                                                </a>
+                                            </h4>
+                                            <div class="block transition-all duration-300 ease-out delay-0">
+                                                <div class="relative">
+                                                    <a href="#"
+                                                        class="bg-[#ffb463] text-white py-2 px-4 rounded-[3px] inline-block">
+                                                        <span>Detaylar</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="text-sm">
+                                                <span class="p-[6px] text-sm rounded-[3px] leading-[2px]">204,82 TL +20
+                                                    Kdv</span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="w-[698.667px] mr-4 float-left min-h-[1px]">
+                            <div class="mr-0 min-h-[1px] float-left">
+                                <div class="bg-white mt-[15px] box-border relative z-[10]">
+                                    <div class="rounded-[3px] flex mb-[50px]">
+                                        <div class="p-2.5 relative flex-0-0-180 box-border">
+                                            <div class="relative overflow-hidden box-border">
+                                                <a href="{{ url('/detay') }}"
+                                                    class="transition-all duration-300 ease-out delay-0">
+                                                    <img src="img/a.jpg"
+                                                        class="block w-full transition-all duration-1500 ease-in-out delay-0 transform duration-500 hover:scale-110">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="m-5 pt-[13px] pr-[13px] pb-[5px] pl-[10px] relative">
+                                            <span
+                                                class="text-[13px] bg-[#f9f9f9] rounded-[3px] text-[#555] leading-[1px] relative top-[-10px] z-[99] pt-1.5 pr-3.5 pb-1.25 pl-3.5">SK:
+                                                079 22250</span>
+                                            <h4 class="text-sm leading-[18px] mt-[2px] mb-[13px] mx-0 font-semibold">
+                                                <a href="#" class="text-[#242424]">
+                                                    <h2 class="text-sm not-italic font-normal text-[#242424] mt-0">İthal
+                                                        Ağaç
+                                                        Delme Matkap Ucu 22x250</h2>
+                                                </a>
+                                            </h4>
+                                            <div class="block transition-all duration-300 ease-out delay-0">
+                                                <div class="relative">
+                                                    <a href="#"
+                                                        class="bg-[#ffb463] text-white py-2 px-4 rounded-[3px] inline-block">
+                                                        <span>Detaylar</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="text-sm">
+                                                <span class="p-[6px] text-sm rounded-[3px] leading-[2px]">204,82 TL +20
+                                                    Kdv</span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--JAVASCRIPT-->
+                    <script>
+                        var swiper = new Swiper(".multiple-slide-carousel", {
+                            loop: true,
+                            slidesPerView: 3,
+                            spaceBetween: 20,
+                            navigation: {
+                                nextEl: ".swiper-button-next",
+                                prevEl: ".swiper-button-prev",
+                            },
+                            breakpoints: {
+                                640: {
+                                    slidesPerView: 1,
+                                    spaceBetween: 20,
+                                },
+                                768: {
+                                    slidesPerView: 2,
+                                    spaceBetween: 20,
+                                },
+                                1024: {
+                                    slidesPerView: 3,
+                                    spaceBetween: 20,
+                                },
+                            },
+                        });
+
+                    </script>
+
                 </div>
-                <style>
-
-                </style>
-
             </div>
         </div>
+
     </div>
 
 
     <!--FOOTER SECTION-->
 
     <footer
-        class="box-border relative z-20  bg-footerbg pt-[60px] bg-cover bg-center w-full h-auto border-t-[10px] border-t-white">
+        class="box-border relative z-20  bg-footerbg pt-[60px] bg-cover bg-center w-full h-auto border-t-[10px] border-t-white ">
         <div class="max-w-[1200px] w-full mx-auto">
-            <div class="px-[15px] flex flex-wrap -mx-[15px]">
-                <div class="mb-[30px] flex-0-0-[41.66%] max-w-[41.66%]">
+            <div class="px-[15px] flex flex-wrap -mx-[15px] lg:p-2 lg:mx-2">
+                <div class="mb-[30px] flex-0-0-[41.66%] max-w-[41.66%] ">
                     <div class="mb-10 box-border">
                         <div class=" border-b-[1px] border-b-[#333] pb-[15px] mb-[30px] box-border">
                             <h4 class="text-white font-medium text-xl m-0">Ürün Kategorisi</h4>
@@ -716,7 +980,7 @@
                 </div>
 
             </div>
-            <div class="px-[15px]  flex flex-wrap -mx-[15px] border-t border-t-1 border-t-[#333]">
+            <div class="px-[15px]  flex flex-wrap -mx-[15px] border-t border-t-1 border-t-[#333] lg:p-2 lg:mx-2">
                 <div class="pb-[30px] pt-[25px] mt-2.5 box-border flex justify-between w-full">
                     <div class="max-w-[50%] flex flex-wrap -mx-[15px] ">
                         <div class="flex float-left ">

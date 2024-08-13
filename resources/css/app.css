@@ -13,5 +13,28 @@
 
 a.active {
     background-color: #44526c;
-    color: white; 
+    color: white; #carousel {
+    transition: transform 0.5s ease-in-out;
+}
+}
+
+#carousel {
+    width: 100%;
+    overflow: hidden;
+}
+
+.swiper-wrapper {
+    display: flex;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.swiper-slide {
+    flex: 0 0 auto;
+    width: calc(100% / 3 - 20px); /* 3 kart gösterilecekse */
+    margin-right: 20px; /* Kartlar arası boşluk */
+}
+
+.swiper-slide:last-child {
+    margin-right: 0;
 }
