@@ -1593,7 +1593,8 @@
                             <div class="box-border">
                                 <div class="text-left mt-5 box-border">
                                     <a href="{{ url('/standlar') }}"
-                                        class="link w-full text-[#242424] inline-block text-sm font-medium py-[7px] pr-[10px] mt-[5px] pl-0 mb-[3px] border-b border-gray-300 hover:text-white hover:bg-[#44526c]">
+                                        class="link w-full text-[#242424] inline-block text-sm font-medium py-[7px] pr-[10px] mt-[5px]
+                                         pl-0 mb-[3px] border-b border-gray-300 hover:text-white hover:bg-[#44526c]">
                                         <i class="flex font-normal not-italic text-sm">
                                             <img src="img/chevron-right.svg" alt="chevron-right"> Hazır Standlar
                                         </i>
@@ -1601,13 +1602,15 @@
 
 
                                     <a href="{{ url('/bahce') }}"
-                                        class="link w-full text-[#242424] inline-block text-sm font-medium py-[7px] pr-[10px] mt-[5px] pl-0 mb-[3px] border-b border-gray-300 hover:text-white hover:bg-[#44526c]">
+                                        class="link w-full text-[#242424] inline-block text-sm font-medium py-[7px] pr-[10px]
+                                         mt-[5px] pl-0 mb-[3px] border-b border-gray-300 hover:text-white hover:bg-[#44526c]">
                                         <i class="flex font-normal not-italic text-sm">
                                             <img src="img/chevron-right.svg">
                                             Bahçe Ürünü</i>
                                     </a>
                                     <a href="{{ url('/insaat') }}"
-                                        class="link w-full text-[#242424] inline-block text-sm font-medium py-[7px] pr-[10px] mt-[5px] pl-0 mb-[3px] border-b border-gray-300 hover:text-white hover:bg-[#44526c]">
+                                        class="link w-full text-[#242424] inline-block text-sm font-medium py-[7px] pr-[10px]
+                                         mt-[5px] pl-0 mb-[3px] border-b border-gray-300 hover:text-white hover:bg-[#44526c]">
                                         <i class="flex font-normal not-italic text-sm">
                                             <img src="img/chevron-right.svg">
                                             İnşaat</i>

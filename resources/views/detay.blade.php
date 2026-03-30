@@ -91,7 +91,7 @@
                     <div class="justify-between box-border">
                         <nav class="inline-block">
                             <ul class="text-left flex justify-between space-x-[49px]">
-                            <li class="inline-block relative whitespace-nowrap text-white group">
+                                <li class="inline-block relative whitespace-nowrap text-white group">
                                     <a href="#"
                                         class="text-white inline-block font-normal leading-[55px] uppercase transition-all duration-500 ease-in-out transform group-hover:translate-y-[55px] group-hover:opacity-0 delay-75">
                                         ANA SAYFA
@@ -325,13 +325,15 @@
                                                         <ul class="m-0 p-0">
                                                             <li
                                                                 class="inline-block p-2 rounded-2 mt-0 b-0 ml-0 mr-[6px] border border-transparent">
-                                                                <a href="#" class="bg-[#00aaf0] text-white  p-1 rounded-2 flex">
+                                                                <a href="#"
+                                                                    class="bg-[#00aaf0] text-white  p-1 rounded-2 flex">
                                                                     <img src="img/twitter.svg" class=""> Tweet
                                                                 </a>
                                                             </li>
                                                             <li
                                                                 class="inline-block  p-2 rounded-2 mt-0 b-0 ml-0 mr-[6px] border border-transparent">
-                                                                <a href="#" class="bg-[#435f9f] text-white  p-1 rounded-2 flex">
+                                                                <a href="#"
+                                                                    class="bg-[#435f9f] text-white  p-1 rounded-2 flex">
                                                                     <img src="img/facebook.svg" fill="#ffffff"> Facebook
                                                                 </a>
                                                             </li>
@@ -348,11 +350,14 @@
                             <div class="max-w-[1200px]">
                                 <div class="box-border order border-[#e6e6e6]">
                                     <div class="justify-center flex text-center">
-                                        <a href="" class="text-[#242424] inline-block text-[20px] font-medium mt-0 mr-[35px] pb-2.5">
-                                            <i class=" flex text-xl"><img src="img/file-text.svg"  class="">Ürün Açıklaması</i>
+                                        <a href=""
+                                            class="text-[#242424] inline-block text-[20px] font-medium mt-0 mr-[35px] pb-2.5">
+                                            <i class=" flex text-xl"><img src="img/file-text.svg" class="">Ürün
+                                                Açıklaması</i>
                                         </a>
                                     </div>
-                                    <div class="bg-white rounded-[5px] h-20 pt-[50px] pr-0 pb-5 border-t border-[#ebebeb] ">
+                                    <div
+                                        class="bg-white rounded-[5px] h-20 pt-[50px] pr-0 pb-5 border-t border-[#ebebeb] ">
                                     </div>
                                 </div>
                             </div>
@@ -556,7 +561,7 @@
 
     <!--FOOTER-->
 
-  
+
     <footer
         class="box-border relative z-20  bg-footerbg pt-[60px] bg-cover bg-center w-full h-auto border-t-[10px] border-t-white ">
         <div class="max-w-[1200px] w-full mx-auto">

@@ -25,7 +25,8 @@
                         <div class="flex-1 flex justify-end ">
                             <div class="bg-white-10 shadow-none border-0 rounded-[5px] mr-[42px] h-[35px] relative">
                                 <a href="#"
-                                    class="text-white flex mb-0 font-normal text-center align-middle cursor-pointer py-[6px] px-3 text-sm leading-[1.42] rounded-[4px] hover:text-white hover:border hover:border-white hover:bg-white hover:bg-opacity-30">
+                                    class="text-white flex mb-0 font-normal text-center align-middle cursor-pointer py-[6px] px-3
+                                    text-sm leading-[1.42] rounded-[4px] hover:text-white hover:border hover:border-white hover:bg-white hover:bg-opacity-30">
                                     <div class="mr-2">
                                         <img src="img/log-in.svg" alt="Login Icon">
                                     </div>
@@ -64,13 +65,12 @@
                                         <input type="text" placeholder="Ne aramıştınız?..."
                                             class="bg-white-10 shadow-none border-0 rounded-[50px] text-sm h-[45px] py-0 pr-[18px] pl-[50px] w-[330px]">
                                         <button
-                                            class="absolute bg-transparent border-0 cursor-pointer py-auto px-5 right-0 top-1/2 transform -translate-y-1/2 transition-all duration-300 ease delay-0">
+                                            class="absolute bg-transparent border-0 cursor-pointer py-auto px-5 right-0 top-1/2 transform
+                                             -translate-y-1/2 transition-all duration-300 ease delay-0">
                                             <img src="img/search.svg" alt="search">
                                         </button>
                                     </form>
                                 </div>
-
-
                                 <div class="relative inline-block float-left ml-[45px]">
                                     <div class="box-border block">
                                         <a href="outline-0 " class="transition-all duration-300 ease-out">
@@ -84,7 +84,6 @@
                                                     class="bg-[#fd8527] absolute  left-[-20px] top-[11px] rounded-full inline-block h-[26px] w-[26px]"></span>
                                             </button>
                                         </a>
-
                                     </div>
                                 </div>
                             </div>
@@ -100,11 +99,14 @@
                             <ul class="text-left flex justify-between space-x-[49px]">
                             <li class="inline-block relative whitespace-nowrap text-white group">
                                     <a href="#"
-                                        class="text-white inline-block font-normal leading-[55px] uppercase transition-all duration-500 ease-in-out transform group-hover:translate-y-[55px] group-hover:opacity-0 delay-75">
+                                        class="text-white inline-block font-normal leading-[55px] uppercase 
+                                        transition-all duration-500 ease-in-out transform group-hover:translate-y-[55px] group-hover:opacity-0 delay-75">
                                         ANA SAYFA
                                     </a>
                                     <span
-                                        class="absolute top-0 left-0 w-full h-full flex items-center justify-center opacity-0 transition-opacity duration-500 ease-in-out transform translate-y-[20px] group-hover:translate-y-0 group-hover:opacity-100 delay-100">
+                                        class="absolute top-0 left-0 w-full h-full flex items-center justify-center 
+                                        opacity-0 transition-opacity duration-500 ease-in-out transform translate-y-[20px] group-hover:translate-y-0 
+                                        group-hover:opacity-100 delay-100">
                                         <a href="#" class="relative text-white border-b-2 border-red-500">
                                             ANA SAYFA
                                         </a>
@@ -182,8 +184,6 @@
                                 </li>
                             </ul>
                         </nav>
-
-
                     </div>
                 </div>
             </div>
@@ -202,15 +202,12 @@
                                 ve Dağıtım Ağı İle Türkiye Çapında Güvenilir Yapı Malzemeleri Tedariğinde Lider</p>
                             <div class="relative z-[99]">
                                 <div
-                                    class="absolute left-1/2 transform top-0 -translate-x-1/2 border-t-[70px] border-l-[120px] border-r-[120px] border-l-transparent border-r-transparent border-t-[#fff] border-solid">
+                                    class="absolute left-1/2 transform top-0 -translate-x-1/2 border-t-[70px] border-l-[120px] border-r-[120px]
+                                 border-l-transparent border-r-transparent border-t-[#fff] border-solid">
                                 </div>
                                 <img src="img/logo3.png" alt=""
                                     class="absolute left-1/2 transform -translate-x-1/2 top-[60%] translate-y-4">
                             </div>
-
-
-
-
                         </div>
                     </div>
 
@@ -280,7 +277,8 @@
 
         <div class="relative z-[99]">
             <div
-                class="absolute left-1/2 transform bottom-0 -translate-x-1/2 border-b-[70px] border-l-[120px] border-r-[120px] border-l-transparent border-r-transparent border-b-[#fff] border-solid">
+                class="absolute left-1/2 transform bottom-0 -translate-x-1/2 border-b-[70px] border-l-[120px] border-r-[120px]
+                 border-l-transparent border-r-transparent border-b-[#fff] border-solid">
             </div>
             <img src="img/logo3.png" alt="" class="absolute left-1/2 mt-0 mb-5 transform -translate-x-1/2 bottom-[84%]">
         </div>

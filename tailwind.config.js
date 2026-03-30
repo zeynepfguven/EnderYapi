@@ -8,15 +8,13 @@ export default {
     extend: {
       backgroundImage: {
         'bg-header': "url('/img/bg-10.jpg')",
-        'headershape': "url('/img/header-shape.png')",
         
+        'headershape': "url('/img/header-shape.png')",
+
         'pattern': "url('/img/pattern2.png')",
         'footerbg': "url('/img/bg-12.jpg')",
-
         'custom-gradient': 'linear-gradient(#fff, #fff)',
-        
-
-
+     
       },
       
       maxWidth: {

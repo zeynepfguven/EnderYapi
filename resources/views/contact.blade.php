@@ -234,7 +234,7 @@
                             İNŞ. TAAH. SAN. VE TİC. LTD. ŞTİ.</h2>
 
                     </div>
-                    <div class="fitem-center flex-col flex-0-0-33 max-w-[33.33%]  ">
+                    <div class="item-center flex-col flex-0-0-33 max-w-[33.33%]  ">
 
                         <div class="box-border ">
                             <h2 class="text-xl font-medium">Adres</h2>
